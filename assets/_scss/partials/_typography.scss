@@ -21,6 +21,14 @@ Do whatever you want to...GOSH!
       font-style: normal;
 }
 
+@font-face {
+        font-family: "tech";
+        src: url($baseurl + '/assets/fonts/Origin_Tech_Demo_400.eot');
+        src: url($baseurl + '/assets/fonts/Origin_Tech_Demo_400.woff') format('woff'),
+             url($baseurl + '/assets/fonts/Origin_Tech_Demo_400.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
 /* latin-ext */
 @font-face {
   font-family: 'Karla';
@@ -88,6 +96,7 @@ I've edited it a bit, but it's a nice starting point.
 $font-karla:    'Karla', sans-serif;
 $font-worksans:    'Work Sans', sans-serif;
 $font-mono:    'liberation_monoregular', sans-serif;
+$font-tech: 'tech', sans-serif;
 
 /*
 some nice typographical defaults

@@ -14,7 +14,7 @@
       {% else %}
           {% assign categories = post.categories | join:', ' %}
           {% if categories %}
-              {% assign categories = "#" | append:categories %}
+              {% assign categories = "" | append:categories %}
           {% endif %}
           {% include partials/blog/blog-teaser.liquid date=post.date featured=post.featured url=post.url externalurl=post.externalurl target=post.target filter=post.categories categories=categories src=post.teaser_img_src headline=post.title copy=post.teaser %}
       {% endif %}

@@ -379,9 +379,7 @@ HEADER STYLES
 
   @include transition(transform .25s ease);
 
-  &.fixed{
-    position: fixed;
-  }
+
 
   &.hardgone {
       display:none;
@@ -469,7 +467,14 @@ HEADER STYLES
     .search-icon.desktop{
       display: none;
     }
+    .branding-nav {
+      font-size: 3.5rem;
+      font-family: $font-tech;
+      line-height: 1.1em;
 
+      margin-top: 0px;
+      margin-left: 5px;
+    }
     ul.main-nav{
 
       display: block;
@@ -625,7 +630,7 @@ body:not(.safari){
 
   &.home{
     height: 80vh;
-    background: url($baseurl + '/assets/img/static/') no-repeat;
+    background: url($baseurl + '/assets/img/static/background.png') no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -987,6 +992,7 @@ EDUSPRINT
       margin-bottom: 15px;
     }
 
+
     .icons-wrap{
 
       .filter-icon{
@@ -1279,7 +1285,7 @@ FOOTER STYLES
           text-align: center;
           position: relative;
           max-width: 300px;
-          margin-left: 0px;
+          margin-left: 1px;
           margin-bottom: 50px;
         }
 
@@ -1305,6 +1311,7 @@ FOOTER STYLES
         a:hover{
           color: $link-background-hover;
         }
+
   }
 }
 

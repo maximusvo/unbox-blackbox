@@ -16,7 +16,7 @@
           {% if categories %}
               {% assign categories = "#" | append:categories %}
           {% endif %}
-          {% include partials/blog/blog-teaser.liquid date=post.date featured=post.featured url=post.url target=post.target filter=post.categories categories=categories src=post.teaser_img_src headline=post.title copy=post.teaser %}
+          {% include partials/blog/blog-teaser.liquid date=post.date featured=post.featured url=post.url externalurl=post.externalurl target=post.target filter=post.categories categories=categories src=post.teaser_img_src headline=post.title copy=post.teaser %}
       {% endif %}
     {% endfor %}
 </div>

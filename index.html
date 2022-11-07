@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<!-- hero -->
+
+<div class="row">
+    <section class="hero home col-xs-24">
+      <div class="branding">
+      <p class=" black">Unbox<br>Blackbox</p>
+      <h1 class="regular"></h1>
+      </div>
+    </section>
+</div>
+<!-- intro -->
+<section class="section first grey-light col-xs-24">
+    <!-- filters -->
+    <div class="filter-items green">
+        {% include partials/blog-filters.liquid %}
+    </div>
+    <!-- blog teasers -->
+    {% include partials/blog/blog-isotope.liquid %}
+</section>

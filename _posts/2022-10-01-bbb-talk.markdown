@@ -2,7 +2,7 @@
 layout: post
 title:  "Open Hardware: “The next revolution”? "
 date:   2022-10-01 16:22:02 +0100
-categories: Talk
+categories: Talks
 target: "media.ccc.de"
 externalurl: "https://media.ccc.de/v/bitsundbaeume-19864-open-hardware-the-next-revolution-"
 ---

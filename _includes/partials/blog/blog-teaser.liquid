@@ -16,10 +16,10 @@
             <p class="teaser-copy">{{ include.copy }}</p>
             {% endif %}
             {% if include.categories %}
-            <span class="teaser-cats">Content type: {{ include.categories }}</span>
+            <span class="teaser-cats">#{{ include.categories }}</span>
             {% endif %}
             {% if include.target %}
-            <span class="teaser-cats">Published at: {{ include.target }}</span>
+            <span class="teaser-cats">Published by: {{ include.target }}</span>
             {% endif %}
             <div class="teaser-arrow has-arrow"></div>
         </div>

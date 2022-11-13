@@ -1321,6 +1321,20 @@ FOOTER STYLES
 .home-aims-list {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 0px !important;
+  .sub{
+    font-size: 2.0em;
+    text-weight: bold;
+    text-align: center !important;
+  }
+  img{
+    padding-top: 40px;
+    width: 20%;
+  }
+  p{
+    text-align: left !important;
+  }
+
   hr {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -1334,6 +1348,13 @@ FOOTER STYLES
   ul{
     text-align: left !important;
     list-style: disc !important;
+
+  }
+  li {
+    margin-bottom: 0px !important;
+  }
+  strong {
+    text-align: left !important;
   }
 
 }

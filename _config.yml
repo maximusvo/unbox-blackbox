@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-email: unbox@posteo.de
+email: unbox-contact@posteo.de
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: ma__vo
 permalink: /blog/:title
@@ -27,6 +27,7 @@ gems:
   - jekyll-feed
   - jekyll-bootstrap-sass
   - jekyll-lunr-js-search
+  - jekyll-email-protect
   #- jekyll-autoprefixer
 exclude:
   - Gemfile

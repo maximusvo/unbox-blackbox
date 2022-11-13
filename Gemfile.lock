@@ -38,6 +38,7 @@ GEM
     jekyll-bootstrap-sass (0.1.0)
       bootstrap-sass (~> 3.3)
       jekyll (>= 2.5)
+    jekyll-email-protect (1.1.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-lunr-js-search (3.3.0)
@@ -96,6 +97,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.2.2)
   jekyll-bootstrap-sass
+  jekyll-email-protect
   jekyll-feed (~> 0.12)
   jekyll-lunr-js-search
   jekyll-seo-tag

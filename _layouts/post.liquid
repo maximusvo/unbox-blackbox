@@ -65,6 +65,9 @@
                     {{ content }}
                 </div>
             </div>
+            {% if page.externalurl %}
+                <p>Der Inhalt ist auf der externen Seite {{ page.target }} erschienen und wird hier nur verlinkt. Hier geht's zum Inhalt: <a href='{{ page.externalurl }}' target='_blank'>{{ page.externalurl }}</a><p>
+            {% endif %}
 
         </section>
 </div>

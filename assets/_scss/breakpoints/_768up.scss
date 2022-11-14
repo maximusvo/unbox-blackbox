@@ -251,5 +251,12 @@ FOOTER STYLES
     img{
         max-width: 23%;
     }
-
+  .sub{
+    &.mobil-hide {
+        display: block;
+    }
+    &.desktop-hide {
+        display: none;
+    }
+  }
 }

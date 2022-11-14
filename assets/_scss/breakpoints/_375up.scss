@@ -48,5 +48,13 @@
     img{
         width: 40%;
     }
-
+  .sub{
+    &.mobil-hide {
+        display: none;
+    }
+    &.desktop-hide {
+        display: block;
+    }
+  }
 }
+

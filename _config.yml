@@ -81,6 +81,6 @@ defaults:
 repository: 'unbox-blackbox'
 
 title: "Unbox Blackbox"
-description: ""
+description: "Texte & Talks zur Aneignung von Technik durch die Zivilgesellschaft - by Maximilian Voigt"
 logo: "/assets/img/static/"
 lang: "de_DE"

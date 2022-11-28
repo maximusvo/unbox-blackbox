@@ -82,5 +82,8 @@ repository: 'unbox-blackbox'
 
 title: "Unbox Blackbox"
 description: "Texte & Talks zur Aneignung von Technik durch die Zivilgesellschaft - by Maximilian Voigt"
-logo: "/assets/img/static/"
+logo: "/assets/img/static/mavo.jpg"
+twitter:
+  username: ma__vo
+  card: summary_large_image
 lang: "de_DE"

@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="author" content="www.open-hardware-allianz.de">
+    <meta name="author" content="Maximilian Voigt">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="manifest" href="/manifest.json">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/static/mavo.ico">
     <link rel="stylesheet" href="/assets/main.css">
-    {% if page.url contains '/oer' %}
+    <meta property="og:image" content="https://open-hardware-allianz.de/assets/img/static/background.png" />
+    <meta name="twitter:image" content="https://open-hardware-allianz.de/assets/img/static/background.png" />
+    {% if page.url contains '/random' %}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{page.titel}}" />
     <meta name="twitter:description" content="{{page.desc}}" />

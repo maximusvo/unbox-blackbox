@@ -2,7 +2,6 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
     <meta name="author" content="Maximilian Voigt">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="manifest" href="/manifest.json">
@@ -10,27 +9,9 @@
     <link rel="stylesheet" href="/assets/main.css">
     <meta property="og:image" content="https://{{site.url}}/assets/img/static/background.png" />
     <meta name="twitter:image" content="https://{{site.url}}/assets/img/static/background.png" />
-    {% if page.url contains '/random' %}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{page.titel}}" />
-    <meta name="twitter:description" content="{{page.desc}}" />
-    <meta name="twitter:image" content="{{site.url}}/assets/img/static/logo_oha.png" />
-    <title> {{ page.titel }}</title>
-    <meta property="og:title" content="{{ page.titel }}" />
-    <meta property="og:locale" content="de_DE" />
-    <meta name="description" content="{{ page.desc }}" />
-    <meta property="og:description" content="{{ page.desc }}" />
-    <link rel="canonical" href="{{site.url}}{{ page.url }}" />
-    <meta property="og:url" content="{{site.url}}{{ page.url }}" />
-    <meta property="og:site_name" content="edulabs" />
-    <meta property="og:image" content="{{site.url}}/assets/img/static/logo_oha.png" />
-    <meta property="og:type" content="Open Hardware" />
-    <meta property="article:published_time" content="{{ page.date }}" />
-    <script type="application/ld+json">
-    {"name":"{{ page.titel}}","description":"{{ page.desc}}","author": "{{ page.author-name}}","@type":"OSHW","url":"{{site.url}}{{ page.url }}","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"{{ site.logo}}"}},"image":null,"headline":"{{ page.titel }}","dateModified":"{{ page.date }}","datePublished":"{{ page.date}}","sameAs":"","mainEntityOfPage":{"@type":"WebPage","@id":"{{ page.url}}"},"@context":"http://schema.org"}</script>
-    {% else %}
+
     {% seo %}
-    {% endif %}
+
 
 </head>
 <body>

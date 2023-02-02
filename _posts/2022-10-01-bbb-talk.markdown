@@ -3,6 +3,6 @@ layout: post
 title:  "Open Hardware: “The next revolution”? "
 date:   2022-10-01 16:22:02 +0100
 categories: Talks
-target: "media.ccc.de"
+target: "Bits & Bäume 2022"
 externalurl: "https://media.ccc.de/v/bitsundbaeume-19864-open-hardware-the-next-revolution-"
 ---

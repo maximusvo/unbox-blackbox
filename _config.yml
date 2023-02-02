@@ -28,6 +28,8 @@ gems:
   - jekyll-bootstrap-sass
   - jekyll-lunr-js-search
   - jekyll-email-protect
+  - jekyll-sitemap
+  - jekyll-seo-tag
   #- jekyll-autoprefixer
 exclude:
   - Gemfile
@@ -45,41 +47,6 @@ plugins:
 sass:
   sass_dir:          assets/_scss
   #style:            :compressed
-
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /:collection/:name
-  labs:
-    output: true
-    permalink: /:collection/:name
-  dw:
-    output: true
-    permalink: /oer/:title/index.html
-  dw-edit:
-    output: true
-    permalink: /oer/:title/edit
-  project:
-    output: true
-    permalink: /projects/:title/index.html
-  project-edit:
-    output: true
-    permalink: /projects/:title/edit
-  offers:
-    output: false
-
-defaults:
- -
-   scope:
-     path: "_project"
-   values:
-     layout: project
- -
-   scope:
-     path: "_project-edit"
-   values:
-     layout: add-project
 
 repository: 'unbox-blackbox'
 

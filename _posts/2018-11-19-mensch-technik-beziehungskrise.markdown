@@ -6,7 +6,7 @@ categories: Blog Talks
 
 Am vergangenen Wochenende trafen sich zahlreiche Aktive aus verschiedenen Bewegungen rund um das Thema Nachhaltigkeit in Berlin. Die Konferenz "<a href="https://bits-und-baeume.org/de" rel="noopener" target="_blank">Bits & Bäume</a>" hatte das Ziel der Vernetzung dieser unterschiedlichen Communities. Es ging um Fragen wie:
 
-<blockquote>"Welche Rolle spielt Nachhaltigkeit für stabile Tech-Communities? Welche ökologischen Chancen stecken in digitalen Anwendungen etwa für Klima- und Ressourcenschutz? Welche Arten von Digitalisierung stehen diesen Zielen entgegen oder sind gar kontraproduktiv? Wie kann die digitale Gesellschaft demokratisch und gerecht gestaltet und zugleich darauf ausgerichtet sein, auf friedvolle Weise die Grundlagen unseres Lebens auf diesem Planeten zu bewahren?"</blockquote>
+*"Welche Rolle spielt Nachhaltigkeit für stabile Tech-Communities? Welche ökologischen Chancen stecken in digitalen Anwendungen etwa für Klima- und Ressourcenschutz? Welche Arten von Digitalisierung stehen diesen Zielen entgegen oder sind gar kontraproduktiv? Wie kann die digitale Gesellschaft demokratisch und gerecht gestaltet und zugleich darauf ausgerichtet sein, auf friedvolle Weise die Grundlagen unseres Lebens auf diesem Planeten zu bewahren?"*
 
 Ich war dabei und habe über die Frage gesprochen, was das Thema Nachhaltigkeit mit technischen Objekten zu tun hat. Warum schmeißen wir den alten Wasserkocher so leichtfertig weg? Meine These: Weil wir eine gestörte Beziehung zu unseren Alltagsgegenständen pflegen.
 

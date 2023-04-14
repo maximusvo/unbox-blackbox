@@ -622,8 +622,8 @@ body:not(.safari){
   }
 
   &.home{
-    height: 80vh;
-    background: url($baseurl + '/assets/img/static/background.png') no-repeat;
+    height: 40vh;
+    //background: url($baseurl + '/assets/img/static/background.png') no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -645,12 +645,12 @@ body:not(.safari){
     }
     h1 {
       text-align: left !important;
-      font-size: 2rem;
+      font-size: 2rem !important;
       line-height: 1.1em;
     }
     .branding{
       position: absolute;
-      top: 50%;
+      top: 10%;
       left: 50%;
       transform: translate(-50%,-50%);
       display: block;
@@ -658,6 +658,10 @@ body:not(.safari){
       background-color: $white;
       padding-top: 10px;
       padding-bottom: 10px;
+
+          h1 {
+            font-family: $font-tech;
+          }
     }
   }
 

@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Unboxing Blackboxes - Mit Open Hardware & Zivilgesellschaft in eine nachhaltige Zukunft"
+date:   2023-03-13 16:22:02 +0100
+categories: Publikationen
+target: "Forum Open Hardware 2023"
+externalurl: "https://hardware.forum-open.de/assets/data/FOH23_Publikation_2023_WEB.pdf"
+---

@@ -5,6 +5,7 @@
  * Created: 15:16
  **/
 
+/**
 // test formspree
 
 var currentTab = 0; // Current tab is set to be the first tab (0)
@@ -80,6 +81,8 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 // test end
+
+**/
 function sendContentToStaticman(formSel, waitMsgDiv, successMsgDiv, errorMsgDiv) {
     return function () {
       var form = $(formSel);

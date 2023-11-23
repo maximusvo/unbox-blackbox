@@ -17,7 +17,7 @@ email: unbox-contact@posteo.de
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: ma__vo
 permalink: /blog/:title
-url: "www.unbox-blackbox.org"
+url: "https://unbox-blackbox.org"
 
 # Build settings
 highlighter: rouge

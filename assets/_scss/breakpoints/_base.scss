@@ -1366,3 +1366,13 @@ FOOTER STYLES
   }
 
 }
+#about{
+    p{
+        a{
+            background-color: $link-background;
+        }
+        a:hover{
+            background-color: $link-background-hover;
+        }
+    }
+}

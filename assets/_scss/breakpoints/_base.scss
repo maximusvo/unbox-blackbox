@@ -1302,6 +1302,7 @@ FOOTER STYLES
     }
       a:hover{
         color: $link-background-hover;
+
       }
   }
   .gdpr-message{
@@ -1370,9 +1371,11 @@ FOOTER STYLES
     p{
         a{
             background-color: $link-background;
+            color: $white;
         }
         a:hover{
             background-color: $link-background-hover;
+            color: $black;
         }
     }
 }

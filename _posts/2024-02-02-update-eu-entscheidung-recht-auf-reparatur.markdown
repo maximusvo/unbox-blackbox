@@ -2,7 +2,7 @@
 layout: post
 title:  "EU ebnet Weg für günstige Reparaturen"
 date: 2024-02-02
-categories: Gastbeitrag
+categories: Gastartikel
 target: "Netzpolitik.org"
 externalurl: "https://netzpolitik.org/2024/verbraucherschutz-eu-ebnet-weg-fuer-guenstige-reparaturen/"
 ---

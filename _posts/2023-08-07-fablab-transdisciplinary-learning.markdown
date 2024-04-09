@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FabLab - Handbuch Transdisziplinäre Didaktik"
+title:  "FabLab - Handbook Transdisciplinary Learning "
 date:   2023-08-07 16:22:02 +0100
 categories: Gastbeitrag
 target: "transcript-verlag.de"

@@ -7,4 +7,3 @@ target: "Deutschlandfunk"
 externalurl: "https://www.deutschlandfunk.de/aktionsprogramm-reparieren-statt-wegwerfen-dlf-e41c19b6-100.html"
 ---
 
-<a href="https://www.deutschlandfunk.de/aktionsprogramm-reparieren-statt-wegwerfen-dlf-e41c19b6-100.html" target="_blank">Zur Originalquelle</a>

@@ -6,5 +6,3 @@ categories: Gastartikel
 target: "heise.de"
 externalurl: "https://www.heise.de/hintergrund/Die-Entwickler-des-Open-Source-Lautsprechers-Teufel-Mynd-im-Interview-10490607.html"
 ---
-
-<a href="https://www.heise.de/hintergrund/Die-Entwickler-des-Open-Source-Lautsprechers-Teufel-Mynd-im-Interview-10490607.html" target="_blank">Zur Originalquelle</a>

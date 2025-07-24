@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Teufel-Entwickler - 'Es tut nicht weh, den Schaltplan zu veröffentlichen'"
+title:  "Teufel-Entwickler: „Es tut nicht weh, den Schaltplan zu veröffentlichen“"
 date: 2025-07-18
 categories: Gastartikel
 target: "heise.de"

@@ -141,12 +141,20 @@ img { max-width: 100%; display: block; }
 .drill-hero-wrapper {
   position: relative;
   height: 320vh;
+  height: 320svh;
 }
 
 .drill-hero-sticky {
   position: sticky;
   top: 0;
+  /* svh (locked to the smallest viewport, i.e. toolbar always shown) instead
+     of vh: some WebKit-based iOS browsers (Vivaldi confirmed, Safari itself
+     is fine) still recompute plain vh live as their toolbar collapses while
+     scrolling, which lands exactly on this sticky/unstick boundary and
+     yanks the scroll position back into the hero. svh never changes mid-
+     scroll, so there's nothing for that recalculation to trip over. */
   height: 100vh;
+  height: 100svh;
   min-height: 560px;
   overflow: hidden;
   border-bottom: 1px solid var(--line-strong);
@@ -166,6 +174,7 @@ img { max-width: 100%; display: block; }
   width: min(1500px, 120vw);
   height: auto;
   max-height: 100vh;
+  max-height: 100svh;
   overflow: visible;
 }
 
@@ -213,7 +222,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 780px) {
-  .drill-hero-wrapper { height: 260vh; }
+  .drill-hero-wrapper { height: 260vh; height: 260svh; }
   .drill-hero-copy { padding-top: 40px; }
 }
 

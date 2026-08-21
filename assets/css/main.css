@@ -30,7 +30,13 @@
 }
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+/* Disable scroll anchoring site-wide: the sticky hero releasing right where
+   #archiv's sticky headline pins in gives Chrome's anchoring heuristic two
+   sticky state changes at almost the same scroll position, which it
+   sometimes "corrects" for by yanking the scroll position back up into the
+   hero on mobile. Nothing on this page relies on anchoring (no content is
+   ever prepended above the viewport), so it's safe to turn off entirely. */
+html { -webkit-text-size-adjust: 100%; overflow-x: hidden; overflow-anchor: none; }
 svg { max-width: 100%; height: auto; }
 
 body {

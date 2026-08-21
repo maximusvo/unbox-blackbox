@@ -2,6 +2,20 @@
 layout: post
 title:  "Technik & Mensch: eine Beziehungskrise"
 categories: Blog Talks
+teaser: >
+  Auf der Konferenz Bits & Bäume 2018 spricht Maximilian Voigt darüber,
+  warum wir Alltagsgegenstände wie den kaputten Wasserkocher so leichtfertig
+  wegwerfen – und macht eine gestörte Beziehung zur eigenen Technik dafür
+  verantwortlich. Sein Vorschlag: offene Werkstätten und Open Source
+  Hardware, um das Aufschrauben und Verstehen von Geräten wieder alltäglich
+  und für alle zugänglich zu machen.
+description: >
+  Auf der Konferenz Bits & Bäume 2018 spricht Maximilian Voigt darüber,
+  warum wir Alltagsgegenstände wie den kaputten Wasserkocher so leichtfertig
+  wegwerfen – und macht eine gestörte Beziehung zur eigenen Technik dafür
+  verantwortlich. Sein Vorschlag: offene Werkstätten und Open Source
+  Hardware, um das Aufschrauben und Verstehen von Geräten wieder alltäglich
+  und für alle zugänglich zu machen.
 ---
 
 Am vergangenen Wochenende trafen sich zahlreiche Aktive aus verschiedenen Bewegungen rund um das Thema Nachhaltigkeit in Berlin. Die Konferenz "<a href="https://bits-und-baeume.org/de" rel="noopener" target="_blank">Bits & Bäume</a>" hatte das Ziel der Vernetzung dieser unterschiedlichen Communities. Es ging um Fragen wie:

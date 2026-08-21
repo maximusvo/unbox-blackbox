@@ -1,0 +1,27 @@
+#!/bin/sh
+# Auto-generates missing teaser images (assets/img/teasers/<slug>.svg) for any
+# staged _posts/*.markdown before the commit completes, and stages the result
+# so it's included in the same commit. Skipped if Node or Chrome aren't
+# available (e.g. on a machine that only edits content, never runs the
+# generator) — the commit still goes through, just without new teaser art.
+#
+# Installed via: git config core.hooksPath scripts/git-hooks
+
+repo_root=$(git rev-parse --show-toplevel) || exit 0
+cd "$repo_root" || exit 0
+
+staged_posts=$(git diff --cached --name-only --diff-filter=ACMR -- '_posts/*.markdown')
+[ -z "$staged_posts" ] && exit 0
+
+command -v node >/dev/null 2>&1 || exit 0
+[ -d "scripts/circuit-gen/node_modules" ] || exit 0
+
+node scripts/circuit-gen/render.js
+status=$?
+if [ $status -ne 0 ]; then
+  echo "pre-commit: teaser image generation failed (exit $status) — commit aborted." >&2
+  echo "pre-commit: fix the issue, or commit with --no-verify to skip this step." >&2
+  exit $status
+fi
+
+git add assets/img/teasers/*.svg

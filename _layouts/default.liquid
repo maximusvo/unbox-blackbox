@@ -1,46 +1,22 @@
 <!doctype html>
-<html lang="de">
+<html lang="{{ site.lang | default: 'de' | slice: 0, 2 }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Maximilian Voigt">
-    <meta name="keywords" content="Produkttransparenz, Reparaturkultur, Right to Repair, Recht auf Reparatur, Open Source Hardware, Technik und Macht, Technikbildung, Technikphilosophie">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/static/mavo.ico">
-    <link rel="stylesheet" href="/assets/main.css">
-    <meta property="og:image" content="{{site.baseurl}}/assets/img/static/background.png" />
-    <meta name="twitter:image" content="{{site.baseurl}}/assets/img/static/background.png" />
-
-    {% seo %}
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
+  {% feed_meta %}
+  {% seo %}
 </head>
 <body>
-  <style>
-  html {
-    touch-action: manipulation;
-}
-  </style>
 {% include header.liquid %}
-{% raw %}
-<script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
-      </h3>
-      {{#is_post}}
-      <ul>
-        {{#tags}}<li>{{.}} </li>{{/tags}}
-      </ul>
-      {{/is_post}}
-    </article>
-  {{/entries}}
-</script>
-{% endraw %}
-<div class="page-wrap">
-    <section id="search-results" style="display: none;"> </section>
-    {{ content }}
-</div>
+<main class="page">
+  {{ content }}
+</main>
 {% include footer.liquid %}
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+{% if page.url == '/' %}<script src="{{ '/assets/js/drill-hero.js' | relative_url }}"></script>{% endif %}
+</body>
+</html>

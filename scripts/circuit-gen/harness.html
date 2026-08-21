@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>circuit-gen harness</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=block" rel="stylesheet">
+<script type="text/javascript" src="vendor/paper-full.js"></script>
+<script type="text/javascript" src="vendor/memories.js" canvas="myCanvas"></script>
+</head>
+<body>
+  <div style="visibility: hidden; font-family: 'Montserrat'; font-weight: bold;">font warmup</div>
+  <canvas id="myCanvas" width="1754" height="1241" hidpi="off"></canvas>
+  <img id="circuit">
+  <textarea id="usertext"></textarea>
+  <script>
+    window.addEventListener('load', function () {
+      document.fonts.load('bold 60px Montserrat').then(function () {
+        return document.fonts.ready;
+      }).then(function () {
+        window.__fontsReady = true;
+      });
+    });
+  </script>
+</body>
+</html>

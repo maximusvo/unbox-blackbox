@@ -1,0 +1,15 @@
+{% assign categories = "" | split: "" %}
+{% for post in site.posts %}
+  {% for cat in post.categories %}
+    {% unless categories contains cat %}
+      {% assign categories = categories | push: cat %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign categories = categories | sort %}
+<div class="filters" id="filters">
+  <button class="filter-btn is-active" data-filter="all">Alle</button>
+  {% for cat in categories %}
+  <button class="filter-btn" data-filter="{{ cat | slugify }}">{{ cat }}</button>
+  {% endfor %}
+</div>

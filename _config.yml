@@ -1,59 +1,55 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-email: unbox-contact@posteo.de
-baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: ma__vo
-permalink: /blog/:title
+title: "Unbox Blackbox"
+description: "Texte, Talks und Publikationen von Maximilian Voigt zu Reparierbarkeit, Kreislaufgesellschaft und Open Source Hardware: wie Technik durch die Zivilgesellschaft aneigenbar, reparierbar und mitgestaltbar wird."
 url: "https://unbox-blackbox.org"
+baseurl: ""
+lang: "de_DE"
 
-# Build settings
-highlighter: rouge
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-  - jekyll-bootstrap-sass
-  - jekyll-lunr-js-search
-  - jekyll-email-protect
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  #- jekyll-autoprefixer
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - commands.txt
-  - start_serve.bat
-  - start_watch.bat
+email: unbox-contact@posteo.de
+author:
+  name: Maximilian Voigt
+  twitter: ma__vo
+repository: "unbox-blackbox"
+logo: "/assets/img/mavo.jpg"
 
-plugins:
-  - jekyll-seo-tag
+keywords:
+  - Reparierbarkeit
+  - Recht auf Reparatur
+  - Kreislaufgesellschaft
+  - Kreislaufwirtschaft
+  - Open Source Hardware
+  - Open Hardware
+  - Technikaneignung
+  - Zivilgesellschaft
+  - Offene Werkstätten
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          assets/_scss
-  #style:            :compressed
-
-repository: 'unbox-blackbox'
-
-title: "Unbox Black Box"
-description: "Open Source Hardware als Zukunftsvision: Texte und Talks zur Aneignung von Technik durch die Zivilgesellschaft"
-logo: "/assets/img/static/mavo.jpg"
 twitter:
   username: ma__vo
   card: summary_large_image
-lang: "de_DE"
+
+# Gives every page a default social-share image so jekyll-seo-tag can emit
+# og:image / twitter:image (and thus a summary_large_image card) — it only
+# ever reads `page.image`, never site.logo. Built from the assembled
+# cordless-drill hero illustration, see scripts/assets-gen/og-image.html.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/assets/img/og-image.png"
+
+permalink: /blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-email-protect
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - scripts

@@ -1,17 +1,25 @@
-<header class="header">
-    <div class="header-inner">
-        <a class="signet branding-nav" href="/">
-            <img src="/assets/img/static/mavo.jpg">
-        </a>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-mark" href="{{ '/' | relative_url }}">
+      <span class="site-mark-glyph" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="22" height="22">
+          <rect x="4" y="4" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <rect x="18" y="4" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2"/>
+          <rect x="4" y="18" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2"/>
+          <circle cx="23" cy="23" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+      </span>
+      <span class="site-mark-text">Unbox&nbsp;Blackbox</span>
+    </a>
 
-        <ul class="main-nav">
-            {% assign base_dir = page.url | split:'/'  %}
-            {% assign base_dir = base_dir  %}
-            <li {% if base_dir[1] == 'content' %} class="current" {% endif %}><a href="/#content">Texte & Talks</a></li>
-            <li {% if base_dir[1] == 'about' %} class="current" {% endif %}><a href="/#about">About</a></li>
-            <li {% if base_dir[1] == 'contact' %} class="current" {% endif %}><a href="#contact">Kontakt</a></li>
-        </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+    </button>
 
-        <div class="nav-toggle"><span></span></div>
-    </div>
+    <nav class="site-nav" id="site-nav">
+      <a href="{{ '/#archiv' | relative_url }}">Texte &amp; Talks</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/#kontakt' | relative_url }}">Kontakt</a>
+    </nav>
+  </div>
 </header>

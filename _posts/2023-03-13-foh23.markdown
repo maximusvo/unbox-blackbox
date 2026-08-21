@@ -5,4 +5,18 @@ date:   2023-03-13 16:22:02 +0100
 categories: Publikationen
 target: "Forum Open Hardware 2023"
 externalurl: "https://hardware.forum-open.de/assets/data/FOH23_Publikation_2023_WEB.pdf"
+teaser: >
+  Die Publikation zum Forum Open Hardware 2023 trägt Voigts programmatischen Titel "Unboxing
+  Blackboxes" und behandelt das Verhältnis von Open Hardware und Zivilgesellschaft auf dem Weg
+  zu einer nachhaltigeren Zukunft. Sie reiht sich in die Beiträge des Forums ein, das offene
+  Hardwareentwicklung als Werkzeug für gesellschaftliche Teilhabe und Technikgestaltung
+  diskutiert. Im Fokus stehen dabei mutmaßlich Fragen von Reparierbarkeit, lokaler Produktion und
+  ziviler Mitgestaltung technischer Systeme.
+description: >
+  Die Publikation zum Forum Open Hardware 2023 trägt Voigts programmatischen Titel "Unboxing
+  Blackboxes" und behandelt das Verhältnis von Open Hardware und Zivilgesellschaft auf dem Weg
+  zu einer nachhaltigeren Zukunft. Sie reiht sich in die Beiträge des Forums ein, das offene
+  Hardwareentwicklung als Werkzeug für gesellschaftliche Teilhabe und Technikgestaltung
+  diskutiert. Im Fokus stehen dabei mutmaßlich Fragen von Reparierbarkeit, lokaler Produktion und
+  ziviler Mitgestaltung technischer Systeme.
 ---

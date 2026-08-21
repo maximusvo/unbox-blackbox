@@ -1,0 +1,137 @@
+<section class="drill-hero-wrapper" id="drill-hero-wrapper">
+  <div class="drill-hero-sticky">
+    <div class="drill-hero-copy">
+      <p class="hero-kicker">Texte, Talks und Publikationen von Maximilian Voigt</p>
+      <h1 class="hero-title">Gehäuse aufbrechen,<br>Technik mitgestalten.</h1>
+      <p class="hero-lead">
+        Wie gelingt die Aneignung von Technik durch die Zivilgesellschaft?
+      </p>
+    </div>
+
+    <div class="drill-hero-stage">
+      <svg id="drill-svg" class="drill-svg" viewBox="0 0 900 760" aria-hidden="true">
+        <defs>
+          <linearGradient id="drill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0084b0"/>
+            <stop offset="100%" stop-color="#00a356"/>
+          </linearGradient>
+        </defs>
+
+        <g id="drill-flip">
+          <g id="drill-parts" fill="none" stroke="url(#drill-grad)" stroke-linecap="round" stroke-linejoin="round">
+
+            <!-- motor: rear housing barrel -->
+            <g class="drill-part" data-id="motor" data-ex="-210,-60" data-rot="-6">
+              <rect x="250" y="270" width="210" height="110" rx="22" stroke-width="2"/>
+              <line x1="278" y1="292" x2="300" y2="286" stroke-width="1.4"/>
+              <line x1="278" y1="308" x2="304" y2="300" stroke-width="1.4"/>
+              <line x1="278" y1="324" x2="304" y2="318" stroke-width="1.4"/>
+            </g>
+
+            <!-- gearbox: tapered neck to the chuck -->
+            <g class="drill-part" data-id="gearbox" data-ex="-70,-190" data-rot="8">
+              <path d="M 460,270 L 555,290 L 555,360 L 460,380 Z" stroke-width="2"/>
+            </g>
+
+            <!-- chuck: knurled collar + tapered nose + jaws -->
+            <g class="drill-part" data-id="chuck" data-ex="140,-220" data-rot="10">
+              <rect x="555" y="290" width="90" height="70" rx="10" stroke-width="2"/>
+              <line x1="571" y1="294" x2="571" y2="356" stroke-width="1.2"/>
+              <line x1="586" y1="294" x2="586" y2="356" stroke-width="1.2"/>
+              <line x1="601" y1="294" x2="601" y2="356" stroke-width="1.2"/>
+              <line x1="616" y1="294" x2="616" y2="356" stroke-width="1.2"/>
+              <path d="M 645,296 L 690,312 L 690,338 L 645,354 Z" stroke-width="2"/>
+              <line x1="690" y1="318" x2="708" y2="312" stroke-width="1.4"/>
+              <line x1="690" y1="325" x2="710" y2="325" stroke-width="1.4"/>
+              <line x1="690" y1="332" x2="708" y2="338" stroke-width="1.4"/>
+            </g>
+
+            <!-- led -->
+            <g class="drill-part" data-id="led" data-ex="70,-260" data-rot="0">
+              <circle cx="650" cy="368" r="6" stroke-width="1.6"/>
+              <line x1="650" y1="374" x2="650" y2="384" stroke-width="1.2"/>
+            </g>
+
+            <!-- speed selector -->
+            <g class="drill-part" data-id="selector" data-ex="20,-160" data-rot="-14">
+              <rect x="495" y="277" width="36" height="15" rx="7" stroke-width="1.6"/>
+            </g>
+
+            <!-- upper housing cap -->
+            <g class="drill-part" data-id="housing-top" data-ex="-40,-230" data-rot="-4">
+              <path d="M 252,286 Q 246,252 298,248 L 418,248 Q 450,250 458,272"
+                    stroke-width="2"/>
+            </g>
+
+            <!-- handle / grip housing, raked back away from the chuck -->
+            <g class="drill-part" data-id="housing-grip" data-ex="230,140" data-rot="10">
+              <path d="M 420,378 Q 402,378 396,400 L 388,458 Q 384,518 396,556
+                       Q 407,590 428,604 L 470,604 Q 488,590 492,556 L 486,458
+                       Q 483,400 468,382 Q 448,374 428,377 Z"
+                    stroke-width="2"/>
+              <line x1="404" y1="410" x2="404" y2="560" stroke-width="1"/>
+              <line x1="476" y1="410" x2="476" y2="560" stroke-width="1"/>
+            </g>
+
+            <!-- trigger -->
+            <g class="drill-part" data-id="trigger" data-ex="-190,80" data-rot="-16">
+              <path d="M 460,396 L 486,398 L 490,428 L 464,436 Z" stroke-width="1.6"/>
+            </g>
+
+            <!-- electronics module -->
+            <g class="drill-part" data-id="module" data-ex="220,-40" data-rot="6">
+              <rect x="408" y="438" width="38" height="32" rx="5" stroke-width="1.4"/>
+              <line x1="415" y1="470" x2="415" y2="478" stroke-width="1.2"/>
+              <line x1="425" y1="470" x2="425" y2="478" stroke-width="1.2"/>
+              <line x1="435" y1="470" x2="435" y2="478" stroke-width="1.2"/>
+            </g>
+
+            <!-- battery: flares wider than the grip -->
+            <g class="drill-part" data-id="battery" data-ex="-30,40" data-rot="-6">
+              <path d="M 372,604 L 508,604 L 496,686 Q 494,698 480,698
+                       L 400,698 Q 386,698 384,686 Z" stroke-width="2"/>
+              <line x1="386" y1="626" x2="494" y2="626" stroke-width="1"/>
+              <line x1="388" y1="648" x2="492" y2="648" stroke-width="1"/>
+              <rect x="398" y="594" width="16" height="12" stroke-width="1.2"/>
+              <rect x="466" y="594" width="16" height="12" stroke-width="1.2"/>
+            </g>
+
+            <!-- belt clip -->
+            <g class="drill-part" data-id="strap" data-ex="150,40" data-rot="18">
+              <path d="M 495,600 L 520,600 L 520,616 Q 520,626 508,628 L 495,630"
+                    stroke-width="1.6"/>
+            </g>
+
+            <!-- screws -->
+            <g class="drill-part drill-screw" data-id="screw-1" data-ex="-90,-200" data-rot="180">
+              <circle cx="290" cy="280" r="5" stroke-width="1.2"/>
+              <line x1="286" y1="280" x2="294" y2="280" stroke-width="1"/>
+            </g>
+            <g class="drill-part drill-screw" data-id="screw-2" data-ex="90,-200" data-rot="180">
+              <circle cx="520" cy="282" r="5" stroke-width="1.2"/>
+              <line x1="516" y1="282" x2="524" y2="282" stroke-width="1"/>
+            </g>
+            <g class="drill-part drill-screw" data-id="screw-3" data-ex="-260,60" data-rot="180">
+              <circle cx="440" cy="396" r="5" stroke-width="1.2"/>
+              <line x1="436" y1="396" x2="444" y2="396" stroke-width="1"/>
+            </g>
+            <g class="drill-part drill-screw" data-id="screw-4" data-ex="-260,120" data-rot="180">
+              <circle cx="440" cy="596" r="5" stroke-width="1.2"/>
+              <line x1="436" y1="596" x2="444" y2="596" stroke-width="1"/>
+            </g>
+            <g class="drill-part drill-screw" data-id="screw-5" data-ex="200,-260" data-rot="180">
+              <circle cx="650" cy="298" r="5" stroke-width="1.2"/>
+              <line x1="646" y1="298" x2="654" y2="298" stroke-width="1"/>
+            </g>
+
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="drill-scroll-hint" aria-hidden="true">
+      <span>Scrollen</span>
+      <svg viewBox="0 0 16 24" width="12" height="18"><path d="M2 8 L8 16 L14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+</section>

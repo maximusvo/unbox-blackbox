@@ -3,7 +3,20 @@ layout: post
 title:  "Fab Labs: Marktplätze eines neuen Kapitalismus oder Commons basierte Revolution?"
 categories: Blog
 author: Maximilian Voigt
-
+teaser: >
+  Der Beitrag fragt, ob Fab Labs eher Motor eines neuen, unternehmerischen
+  Kapitalismus sind oder Ausgangspunkt für eine commonsbasierte
+  Produktionsweise. Er stellt zwei gegensätzliche Lesarten offener Werkstätten
+  gegenüber – als Innovationslabor versus als Ort demokratisierter,
+  gemeinsam organisierter Herstellung – und verweist auf Studien, Bücher und
+  Essays, die diese Debatte vertiefen.
+description: >
+  Der Beitrag fragt, ob Fab Labs eher Motor eines neuen, unternehmerischen
+  Kapitalismus sind oder Ausgangspunkt für eine commonsbasierte
+  Produktionsweise. Er stellt zwei gegensätzliche Lesarten offener Werkstätten
+  gegenüber – als Innovationslabor versus als Ort demokratisierter,
+  gemeinsam organisierter Herstellung – und verweist auf Studien, Bücher und
+  Essays, die diese Debatte vertiefen.
 ---
 
 Was sind Maker-, Hacker- und Fab-Spaces? Und welche Rolle spielen sie bei der Veränderung gesellschaftlicher Prozesse? Antworten auf diese Fragen hängen von dem ab, der gefragt wird und könnten unterschiedlicher nicht sein. Meistens kommen allerdings zwei Tendenzen zum Vorschein:

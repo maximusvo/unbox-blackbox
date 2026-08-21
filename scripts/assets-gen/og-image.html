@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 630px;
+    background: #05070a;
+    background-image:
+      linear-gradient(#131b1d 1px, transparent 1px),
+      linear-gradient(90deg, #131b1d 1px, transparent 1px);
+    background-size: 40px 40px;
+    overflow: hidden;
+  }
+  .wrap { position: relative; width: 1200px; height: 630px; }
+  .copy {
+    position: absolute; left: 70px; top: 0; bottom: 0; width: 460px;
+    display: flex; flex-direction: column; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .kicker {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 19px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0084b0, #00a356);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 22px;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: #edf3f1;
+    margin: 0 0 26px;
+  }
+  .lead {
+    font-size: 23px;
+    line-height: 1.5;
+    color: #9baaa6;
+    max-width: 430px;
+    margin: 0;
+  }
+  .stage {
+    position: absolute; right: -60px; top: 0; bottom: 0; width: 780px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .stage svg { width: 100%; height: 100%; overflow: visible; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="copy">
+    <p class="kicker">Explosionszeichnung einer Blackbox</p>
+    <h1 class="title">Unbox<br>Blackbox</h1>
+    <p class="lead">Texte, Talks und Publikationen von Maximilian Voigt zu Reparierbarkeit, Kreislaufgesellschaft und Open Source Hardware.</p>
+  </div>
+  <div class="stage">
+    <svg viewBox="226 228 504 490" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="drill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0084b0"/>
+          <stop offset="100%" stop-color="#00a356"/>
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke="url(#drill-grad)" stroke-linecap="round" stroke-linejoin="round">
+
+        <!-- motor -->
+        <rect x="250" y="270" width="210" height="110" rx="22" stroke-width="2"/>
+        <line x1="278" y1="292" x2="300" y2="286" stroke-width="1.4"/>
+        <line x1="278" y1="308" x2="304" y2="300" stroke-width="1.4"/>
+        <line x1="278" y1="324" x2="304" y2="318" stroke-width="1.4"/>
+
+        <!-- gearbox -->
+        <path d="M 460,270 L 555,290 L 555,360 L 460,380 Z" stroke-width="2"/>
+
+        <!-- chuck -->
+        <rect x="555" y="290" width="90" height="70" rx="10" stroke-width="2"/>
+        <line x1="571" y1="294" x2="571" y2="356" stroke-width="1.2"/>
+        <line x1="586" y1="294" x2="586" y2="356" stroke-width="1.2"/>
+        <line x1="601" y1="294" x2="601" y2="356" stroke-width="1.2"/>
+        <line x1="616" y1="294" x2="616" y2="356" stroke-width="1.2"/>
+        <path d="M 645,296 L 690,312 L 690,338 L 645,354 Z" stroke-width="2"/>
+        <line x1="690" y1="318" x2="708" y2="312" stroke-width="1.4"/>
+        <line x1="690" y1="325" x2="710" y2="325" stroke-width="1.4"/>
+        <line x1="690" y1="332" x2="708" y2="338" stroke-width="1.4"/>
+
+        <!-- led -->
+        <circle cx="650" cy="368" r="6" stroke-width="1.6"/>
+        <line x1="650" y1="374" x2="650" y2="384" stroke-width="1.2"/>
+
+        <!-- speed selector -->
+        <rect x="495" y="277" width="36" height="15" rx="7" stroke-width="1.6"/>
+
+        <!-- upper housing cap -->
+        <path d="M 252,286 Q 246,252 298,248 L 418,248 Q 450,250 458,272" stroke-width="2"/>
+
+        <!-- handle / grip housing -->
+        <path d="M 420,378 Q 402,378 396,400 L 388,458 Q 384,518 396,556
+                 Q 407,590 428,604 L 470,604 Q 488,590 492,556 L 486,458
+                 Q 483,400 468,382 Q 448,374 428,377 Z" stroke-width="2"/>
+        <line x1="404" y1="410" x2="404" y2="560" stroke-width="1"/>
+        <line x1="476" y1="410" x2="476" y2="560" stroke-width="1"/>
+
+        <!-- trigger -->
+        <path d="M 460,396 L 486,398 L 490,428 L 464,436 Z" stroke-width="1.6"/>
+
+        <!-- electronics module -->
+        <rect x="408" y="438" width="38" height="32" rx="5" stroke-width="1.4"/>
+        <line x1="415" y1="470" x2="415" y2="478" stroke-width="1.2"/>
+        <line x1="425" y1="470" x2="425" y2="478" stroke-width="1.2"/>
+        <line x1="435" y1="470" x2="435" y2="478" stroke-width="1.2"/>
+
+        <!-- battery -->
+        <path d="M 372,604 L 508,604 L 496,686 Q 494,698 480,698
+                 L 400,698 Q 386,698 384,686 Z" stroke-width="2"/>
+        <line x1="386" y1="626" x2="494" y2="626" stroke-width="1"/>
+        <line x1="388" y1="648" x2="492" y2="648" stroke-width="1"/>
+        <rect x="398" y="594" width="16" height="12" stroke-width="1.2"/>
+        <rect x="466" y="594" width="16" height="12" stroke-width="1.2"/>
+
+        <!-- belt clip -->
+        <path d="M 495,600 L 520,600 L 520,616 Q 520,626 508,628 L 495,630" stroke-width="1.6"/>
+
+        <!-- screws -->
+        <circle cx="290" cy="280" r="5" stroke-width="1.2"/>
+        <line x1="286" y1="280" x2="294" y2="280" stroke-width="1"/>
+        <circle cx="520" cy="282" r="5" stroke-width="1.2"/>
+        <line x1="516" y1="282" x2="524" y2="282" stroke-width="1"/>
+        <circle cx="440" cy="396" r="5" stroke-width="1.2"/>
+        <line x1="436" y1="396" x2="444" y2="396" stroke-width="1"/>
+        <circle cx="440" cy="596" r="5" stroke-width="1.2"/>
+        <line x1="436" y1="596" x2="444" y2="596" stroke-width="1"/>
+        <circle cx="650" cy="298" r="5" stroke-width="1.2"/>
+        <line x1="646" y1="298" x2="654" y2="298" stroke-width="1"/>
+      </g>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

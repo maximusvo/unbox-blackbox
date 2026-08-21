@@ -1,0 +1,23 @@
+{% assign post = include.post %}
+{% assign cat_list = post.categories | join: ' ' %}
+{% assign cat_slugs = "" %}
+{% for cat in post.categories %}
+  {% assign cat_slugs = cat_slugs | append: cat | slugify | append: ' ' %}
+{% endfor %}
+<article class="teaser cat-{{ post.categories | first | slugify }}" data-cats="{{ cat_slugs | strip }}">
+  <a class="teaser-link" href="{% if post.externalurl %}{{ post.externalurl }}{% else %}{{ post.url | relative_url }}{% endif %}" {% if post.externalurl %}target="_blank" rel="noopener"{% endif %}>
+    <div class="teaser-figure">
+      <img src="{{ '/assets/img/teasers/' | append: post.slug | append: '.svg' | relative_url }}" alt="" width="400" height="260">
+      {% if post.externalurl %}<span class="teaser-ext" title="Externer Link">&#8599;</span>{% endif %}
+    </div>
+    <div class="teaser-body">
+      <div class="teaser-meta">
+        {% if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>{% endif %}
+        {% for cat in post.categories %}<span class="teaser-cat cat-{{ cat | slugify }}">{{ cat }}</span>{% endfor %}
+      </div>
+      <h3 class="teaser-title">{{ post.title }}</h3>
+      {% if post.teaser %}<p class="teaser-copy">{{ post.teaser }}</p>{% endif %}
+      {% if post.target %}<div class="teaser-source">{{ post.target }}</div>{% endif %}
+    </div>
+  </a>
+</article>

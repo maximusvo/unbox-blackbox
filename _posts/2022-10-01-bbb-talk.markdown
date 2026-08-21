@@ -5,4 +5,20 @@ date:   2022-10-01 16:22:02 +0100
 categories: Talks
 target: "Bits & Bäume 2022"
 externalurl: "https://media.ccc.de/v/bitsundbaeume-19864-open-hardware-the-next-revolution-"
+teaser: >
+  Der Vortrag bei Bits & Bäume 2022 fragt, ob Open Hardware das Potenzial für eine grundlegende
+  technologische Umwälzung hat. Voigt beschreibt, wie komplexe, geschlossene Gerätedesigns
+  Nutzer:innen von ihrer Technik entfremden und Reparaturen erschweren, was auch ökologische
+  Folgen hat. Während die Recht-auf-Reparatur-Bewegung kurzfristige Verbesserungen anstrebt, geht
+  Open Hardware laut Voigt weiter, da sie die Rolle technischen Wissens im wirtschaftlichen
+  Kontext grundsätzlich verändern könnte. Er bezieht sich dabei auch auf eine EU-Studie von 2021,
+  die Open Hardware bereits als "die nächste Revolution" bezeichnet.
+description: >
+  Der Vortrag bei Bits & Bäume 2022 fragt, ob Open Hardware das Potenzial für eine grundlegende
+  technologische Umwälzung hat. Voigt beschreibt, wie komplexe, geschlossene Gerätedesigns
+  Nutzer:innen von ihrer Technik entfremden und Reparaturen erschweren, was auch ökologische
+  Folgen hat. Während die Recht-auf-Reparatur-Bewegung kurzfristige Verbesserungen anstrebt, geht
+  Open Hardware laut Voigt weiter, da sie die Rolle technischen Wissens im wirtschaftlichen
+  Kontext grundsätzlich verändern könnte. Er bezieht sich dabei auch auf eine EU-Studie von 2021,
+  die Open Hardware bereits als "die nächste Revolution" bezeichnet.
 ---

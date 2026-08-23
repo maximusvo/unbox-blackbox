@@ -55,16 +55,25 @@
     }
   }
 
-  function render() {
-    ticking = false;
+  // Applied vs. target progress: even with a frozen viewportHeight, the
+  // *scrollY* our getBoundingClientRect() math depends on can still get
+  // yanked by the browser itself mid-scroll — some Firefox/Vivaldi mobile
+  // builds adjust the actual scroll offset when their toolbar collapse
+  // changes how much of the document fits on screen. That's a real (if
+  // browser-forced) scrollY change, so freezing viewportHeight alone
+  // doesn't stop it. Rather than snapping straight to it, we ease toward
+  // it each frame, so a one-frame scrollY jump turns into a quick slide
+  // instead of a visible pop.
+  var appliedProgress = 0;
 
+  function computeTargetProgress() {
     var scrollable = wrapper.offsetHeight - viewportHeight;
-    var progress = 0;
-    if (scrollable > 0) {
-      var rect = wrapper.getBoundingClientRect();
-      progress = Math.min(1, Math.max(0, -rect.top / scrollable));
-    }
+    if (scrollable <= 0) return 0;
+    var rect = wrapper.getBoundingClientRect();
+    return Math.min(1, Math.max(0, -rect.top / scrollable));
+  }
 
+  function applyProgress(progress) {
     // phase 1 (0 -> 0.45): the assembled tool turns around.
     // phase 2 (0.45 -> 1): it comes apart into its parts.
     var flipPhase = Math.min(1, progress / 0.45);
@@ -82,6 +91,23 @@
     if (hint) {
       hint.style.opacity = Math.max(0, 1 - progress * 12);
     }
+  }
+
+  function render() {
+    ticking = false;
+
+    var targetProgress = computeTargetProgress();
+    var delta = targetProgress - appliedProgress;
+
+    if (Math.abs(delta) < 0.0008) {
+      appliedProgress = targetProgress;
+    } else {
+      appliedProgress += delta * 0.22;
+      // Keep easing next frame until we've caught up.
+      onScroll();
+    }
+
+    applyProgress(appliedProgress);
   }
 
   function onScroll() {

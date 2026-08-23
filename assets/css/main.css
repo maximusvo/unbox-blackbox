@@ -23,7 +23,6 @@
   --cat-publikationen: #00ae86;
   --cat-talks: #00b25c;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
   --max-width: 1180px;
@@ -47,7 +46,7 @@ body {
   padding-top: 55px;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   font-size: 16px;
   line-height: 1.55;
   background-image:
@@ -58,16 +57,13 @@ body {
   background-attachment: fixed;
 }
 
-/* A fixed background forces the browser to repaint it on every viewport
-   resize. On touch devices, the toolbar collapsing/reappearing while
-   scrolling resizes the viewport continuously, so that repaint fires on
-   nearly every scroll frame — that's what was making the whole page (not
-   just the hero) visibly stutter/jump on Firefox/Vivaldi mobile. Desktop
-   doesn't get this live resize, so it keeps the fixed parallax look; touch
-   devices fall back to the background scrolling with the page instead. */
-@media (pointer: coarse) {
-  body { background-attachment: scroll; }
-}
+/* background-attachment: fixed kept identical on touch and desktop now —
+   an earlier attempt made it `scroll` on touch on the theory that a fixed
+   background's repaint-on-viewport-resize was the jump's cause, but the
+   jump persisted through several rounds of otherwise eliminating every
+   other candidate, including this one having been left as the one
+   remaining inconsistency between desktop (fine) and mobile (broken)
+   behavior. Reverting it to test that directly. */
 
 a { color: var(--ink); text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
 a:hover { color: var(--accent); text-decoration-color: var(--accent); }
@@ -83,7 +79,6 @@ img { max-width: 100%; display: block; }
 .site-mark-text,
 .post-single-source,
 .teaser-source {
-  font-family: var(--font-mono);
   letter-spacing: 0.02em;
 }
 
@@ -256,7 +251,6 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-mono);
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -286,7 +280,7 @@ img { max-width: 100%; display: block; }
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   text-transform: uppercase;
   margin: 0 0 14px;
 }
@@ -302,7 +296,7 @@ img { max-width: 100%; display: block; }
 .hero-lead {
   max-width: 46ch;
   color: var(--ink-soft);
-  font-size: 1.05rem;
+  font-size: 0.92rem;
 }
 
 /* ---------- sections ---------- */
@@ -371,10 +365,14 @@ img { max-width: 100%; display: block; }
   left: 0;
   right: 0;
 }
-.archiv-pin.is-pinned > * {
-  /* .is-pinned is `position: fixed`, relative to the viewport, so it needs
-     to replicate .section-inner's max-width/centering/padding by hand to
-     stay aligned with the rest of the page's content. */
+#archiv .archiv-pin.is-pinned > * {
+  /* #archiv-qualified so this outranks #archiv .section-headline / .filters
+     (both id+class specificity) — otherwise their own zero side-padding
+     wins and the pinned bar spans edge-to-edge on screens narrower than
+     --max-width. .is-pinned is `position: fixed`, relative to the
+     viewport, so it needs to replicate .section-inner's
+     max-width/centering/padding by hand to stay aligned with the rest of
+     the page's content. */
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;

@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  // Temporary debug switch, see main.js — remove once diagnosed.
-  if (location.search.indexOf("nojs=1") !== -1) return;
-
   var wrapper = document.getElementById("drill-hero-wrapper");
   if (!wrapper) return;
 
@@ -52,10 +49,35 @@
   var viewportWidth = window.innerWidth;
   var viewportHeight = window.innerHeight;
 
+  // Same instability, one level up: .drill-hero-wrapper/.drill-hero-sticky
+  // are sized with 320svh/100svh in CSS on the assumption that svh is a
+  // truly static unit — the smallest possible viewport, never recomputed
+  // mid-scroll. That's the spec, but apparently not what Vivaldi/Firefox
+  // mobile actually do: the gap between the drill SVG (vertically centered
+  // within the sticky container) and the hero copy (anchored to its own
+  // top) visibly changes as their toolbar animates, which only makes sense
+  // if the container's real rendered height is still fluctuating under
+  // that "static" unit. Setting the height as an inline pixel value off
+  // the same frozen viewportHeight above takes the browser's live svh
+  // recalculation out of the picture entirely: an inline style overrides
+  // the stylesheet, and unlike a CSS viewport unit, it never recomputes on
+  // its own once set.
+  var drillSvg = wrapper.querySelector(".drill-svg");
+
+  function applyFrozenHeights() {
+    var wrapperRatio = window.innerWidth <= 780 ? 2.6 : 3.2;
+    wrapper.style.height = Math.round(viewportHeight * wrapperRatio) + "px";
+    if (sticky) sticky.style.height = viewportHeight + "px";
+    if (drillSvg) drillSvg.style.maxHeight = viewportHeight + "px";
+  }
+
+  applyFrozenHeights();
+
   function syncViewportSize() {
     if (window.innerWidth !== viewportWidth) {
       viewportWidth = window.innerWidth;
       viewportHeight = window.innerHeight;
+      applyFrozenHeights();
     }
   }
 

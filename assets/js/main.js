@@ -1,11 +1,6 @@
 (function () {
   "use strict";
 
-  // Temporary debug switch: visiting any page with ?nojs=1 in the URL skips
-  // all of this site's JS, to help bisect whether a rendering issue is
-  // caused by our scripts or is pure CSS/layout. Remove once diagnosed.
-  if (location.search.indexOf("nojs=1") !== -1) return;
-
   var navToggle = document.getElementById("nav-toggle");
   var siteNav = document.getElementById("site-nav");
   if (navToggle && siteNav) {
@@ -29,8 +24,9 @@
   // the DOM on an actual state change, so there's no per-frame layout
   // work for it to fall behind on.
   var archivPin = document.getElementById("archiv-pin");
-  if (archivPin) {
-    var sectionInner = archivPin.parentElement;
+  var archivSpacer = document.getElementById("archiv-pin-spacer");
+  if (archivPin && archivSpacer) {
+    var sectionInner = archivSpacer.parentElement;
     var PIN_TOP = 55;
 
     var pinStartY = 0;
@@ -62,9 +58,16 @@
       archivPin.classList.remove("is-pinned", "is-released");
       archivPin.style.top = "";
 
+      // Reserves .archiv-pin's height in the flow regardless of its current
+      // position mode, so .teaser-grid below never has to shift when the
+      // pin leaves/rejoins normal flow (that shift was the residual jump:
+      // the first teaser hopping up right as the pin engaged, and back
+      // down when it released).
       var pinnedHeight = archivPin.offsetHeight;
+      archivSpacer.style.height = pinnedHeight + "px";
+
       var containerBottom = documentTop(sectionInner) + sectionInner.offsetHeight;
-      pinStartY = documentTop(archivPin) - PIN_TOP;
+      pinStartY = documentTop(archivSpacer) - PIN_TOP;
       releaseY = containerBottom - pinnedHeight - PIN_TOP;
       releasedTop = sectionInner.offsetHeight - pinnedHeight;
       updateArchivPin();

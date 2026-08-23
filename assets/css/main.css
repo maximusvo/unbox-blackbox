@@ -54,6 +54,17 @@ body {
   background-attachment: fixed;
 }
 
+/* A fixed background forces the browser to repaint it on every viewport
+   resize. On touch devices, the toolbar collapsing/reappearing while
+   scrolling resizes the viewport continuously, so that repaint fires on
+   nearly every scroll frame — that's what was making the whole page (not
+   just the hero) visibly stutter/jump on Firefox/Vivaldi mobile. Desktop
+   doesn't get this live resize, so it keeps the fixed parallax look; touch
+   devices fall back to the background scrolling with the page instead. */
+@media (pointer: coarse) {
+  body { background-attachment: scroll; }
+}
+
 a { color: var(--ink); text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
 a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 

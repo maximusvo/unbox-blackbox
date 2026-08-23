@@ -330,23 +330,63 @@ img { max-width: 100%; display: block; }
   flex: none;
 }
 
-/* pin the archive headline below the header while its teasers scroll past;
-   it rides along with .section-inner, so it releases again right as that
-   section (and with it, the footer) comes into view */
-#archiv .section-headline {
-  position: sticky;
-  top: 55px;
+/* Headline + filter bar pin below the header while the teasers scroll past,
+   same as before — but not via `position: sticky`. By elimination (with
+   .site-header and .drill-hero-sticky already converted away from sticky
+   and the jump persisting regardless) this was the last native sticky
+   element left on the page, and a single sticky element alone is already
+   enough to trigger Chromium/Vivaldi's dynamic-toolbar-resize
+   repositioning bug. See initArchivPin in main.js: a manual 3-state
+   sticky polyfill (static -> fixed -> absolute), so once a state is
+   applied, the browser's own compositor tracks scroll natively with zero
+   per-frame JS — unlike a continuous transform, there's nothing to lag. */
+/* containing block for .archiv-pin.is-released (position: absolute) below */
+#archiv .section-inner {
+  position: relative;
+}
+
+.archiv-pin {
+  position: relative;
   z-index: 5;
   background: var(--bg);
-  margin: 0 0 8px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line-strong);
   opacity: 1;
   transition: opacity 0.15s ease;
 }
-#archiv .section-headline.is-hidden-by-footer {
+.archiv-pin.is-hidden-by-footer {
   opacity: 0;
   pointer-events: none;
+}
+.archiv-pin.is-pinned {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+}
+.archiv-pin.is-released {
+  /* left:0/right:0 here are relative to .section-inner's padding box (its
+     containing block), which already sits inset by .section-inner's own
+     24px side padding — same box the rest of #archiv's content flows
+     within. No extra horizontal treatment needed to line up with it. */
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.archiv-pin.is-pinned > * {
+  /* .is-pinned is `position: fixed`, relative to the viewport, so it needs
+     to replicate .section-inner's max-width/centering/padding by hand to
+     stay aligned with the rest of the page's content. */
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+#archiv .section-headline {
+  margin: 0 0 8px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-strong);
 }
 
 .about-inner p { max-width: 68ch; color: var(--ink-soft); }
@@ -361,21 +401,9 @@ img { max-width: 100%; display: block; }
   margin-bottom: 32px;
 }
 
-/* rides directly below the pinned archive headline, same reasoning as
-   #archiv .section-headline above */
 #archiv .filters {
-  position: sticky;
-  top: 125px;
-  z-index: 4;
-  background: var(--bg);
   margin-bottom: 0;
   padding: 14px 0 28px;
-  opacity: 1;
-  transition: opacity 0.15s ease;
-}
-#archiv .filters.is-hidden-by-footer {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .filter-btn {

@@ -1,6 +1,11 @@
 (function () {
   "use strict";
 
+  // Temporary debug switch: visiting any page with ?nojs=1 in the URL skips
+  // all of this site's JS, to help bisect whether a rendering issue is
+  // caused by our scripts or is pure CSS/layout. Remove once diagnosed.
+  if (location.search.indexOf("nojs=1") !== -1) return;
+
   var navToggle = document.getElementById("nav-toggle");
   var siteNav = document.getElementById("site-nav");
   if (navToggle && siteNav) {

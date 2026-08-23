@@ -1,6 +1,9 @@
 (function () {
   "use strict";
 
+  // Temporary debug switch, see main.js — remove once diagnosed.
+  if (location.search.indexOf("nojs=1") !== -1) return;
+
   var wrapper = document.getElementById("drill-hero-wrapper");
   if (!wrapper) return;
 

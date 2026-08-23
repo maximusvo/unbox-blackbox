@@ -42,6 +42,9 @@ svg { max-width: 100%; height: auto; }
 
 body {
   margin: 0;
+  /* Reserves the space .site-header used to occupy in normal flow before
+     it became position: fixed (see .site-header below for why). */
+  padding-top: 55px;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans);
@@ -86,9 +89,18 @@ img { max-width: 100%; display: block; }
 
 /* ---------- header ---------- */
 
+/* `position: fixed`, not `sticky`. Confirmed (with JS entirely disabled via
+   ?nojs=1, and separately in an earlier attempt where this was the only
+   sticky element left on the page) that a single sticky .site-header is
+   enough on its own to trigger Chromium/Vivaldi's dynamic-toolbar-resize
+   repositioning bug — no stacking with other sticky elements required.
+   `fixed` doesn't share that bug. Taking it out of flow needs the
+   body { padding-top: 55px } above to reserve its space. */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
   background: rgba(5, 7, 10, 0.88);
   backdrop-filter: blur(6px);

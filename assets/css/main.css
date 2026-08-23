@@ -95,6 +95,21 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--line-strong);
 }
 
+/* backdrop-filter forces the browser to resample whatever's behind this bar
+   on every frame it's visible — which, since it's sticky, is the entire
+   time. That's a known heavy cost on mobile GPUs (Android/Chromium
+   especially), and unlike everything else we've tried, it runs constantly,
+   site-wide, for the full scroll — a plausible reason the main/compositor
+   thread falls behind exactly when the browser's own toolbar-resize reflow
+   adds extra work on top, causing content to lag and then jump to catch up.
+   Desktop GPUs handle it fine, so only drop it on touch devices. */
+@media (pointer: coarse) {
+  .site-header {
+    background: rgba(5, 7, 10, 0.97);
+    backdrop-filter: none;
+  }
+}
+
 .site-header-inner {
   max-width: var(--max-width);
   margin: 0 auto;

@@ -294,26 +294,23 @@ img { max-width: 100%; display: block; }
   flex: none;
 }
 
-/* Headline + filter bar pin below the header while the teasers scroll past,
-   same as before — but driven by a scrollY -> transform calculation in
-   main.js (see initArchivPin) instead of native `position: sticky`.
-   Stacking this on top of the already-sticky .site-header as two more
-   sticky layers (with hardcoded pixel offsets) was what Chromium's dynamic
-   toolbar resize (Vivaldi/Chrome mobile) tripped over: every toolbar
-   show/hide snapped the teaser list underneath by multiples of the
-   toolbar's height. A plain transform, computed from document-absolute
-   offsets and live scrollY, doesn't touch that recalculation at all. */
-.archiv-pin {
-  position: relative;
+/* pin the archive headline below the header while its teasers scroll past;
+   it rides along with .section-inner, so it releases again right as that
+   section (and with it, the footer) comes into view */
+#archiv .section-headline {
+  position: sticky;
+  top: 55px;
   z-index: 5;
   background: var(--bg);
-  will-change: transform;
-}
-
-#archiv .section-headline {
   margin: 0 0 8px;
   padding: 16px 0;
   border-bottom: 1px solid var(--line-strong);
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+#archiv .section-headline.is-hidden-by-footer {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .about-inner p { max-width: 68ch; color: var(--ink-soft); }
@@ -328,10 +325,21 @@ img { max-width: 100%; display: block; }
   margin-bottom: 32px;
 }
 
+/* rides directly below the pinned archive headline, same reasoning as
+   #archiv .section-headline above */
 #archiv .filters {
+  position: sticky;
+  top: 125px;
+  z-index: 4;
   background: var(--bg);
   margin-bottom: 0;
   padding: 14px 0 28px;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+#archiv .filters.is-hidden-by-footer {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .filter-btn {

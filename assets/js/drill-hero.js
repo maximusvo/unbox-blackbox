@@ -122,7 +122,43 @@
     onScroll();
   }
 
-  window.addEventListener("scroll", onScroll, { passive: true });
+  // Only listen for scroll while the (320svh-tall) hero is actually on
+  // screen. A `getBoundingClientRect()` read forces a synchronous layout,
+  // and without this, that ran on *every* scroll event site-wide — including
+  // deep in the teaser list, thousands of pixels past the hero. On mobile,
+  // that main-thread cost lands on top of the browser's own reflow work
+  // while its toolbar show/hide animation runs, which is a plausible source
+  // of the content lagging behind that animation and then jumping to catch
+  // up. Detaching the listener once the hero scrolls out of view removes
+  // that cost from the rest of the page entirely.
+  var scrollActive = false;
+
+  function enableScroll() {
+    if (scrollActive) return;
+    scrollActive = true;
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  function disableScroll() {
+    if (!scrollActive) return;
+    scrollActive = false;
+    window.removeEventListener("scroll", onScroll);
+  }
+
+  if ("IntersectionObserver" in window) {
+    var visibilityObserver = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        enableScroll();
+      } else {
+        disableScroll();
+      }
+    });
+    visibilityObserver.observe(wrapper);
+  } else {
+    enableScroll();
+  }
+
   window.addEventListener("resize", onResize);
   render();
 })();

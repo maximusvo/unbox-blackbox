@@ -7,6 +7,7 @@
   var wrapper = document.getElementById("drill-hero-wrapper");
   if (!wrapper) return;
 
+  var sticky = wrapper.querySelector(".drill-hero-sticky");
   var flip = document.getElementById("drill-flip");
   var hint = wrapper.querySelector(".drill-scroll-hint");
   var parts = Array.prototype.slice.call(document.querySelectorAll(".drill-part"));
@@ -69,13 +70,6 @@
   // instead of a visible pop.
   var appliedProgress = 0;
 
-  function computeTargetProgress() {
-    var scrollable = wrapper.offsetHeight - viewportHeight;
-    if (scrollable <= 0) return 0;
-    var rect = wrapper.getBoundingClientRect();
-    return Math.min(1, Math.max(0, -rect.top / scrollable));
-  }
-
   function applyProgress(progress) {
     // phase 1 (0 -> 0.45): the assembled tool turns around.
     // phase 2 (0.45 -> 1): it comes apart into its parts.
@@ -99,7 +93,21 @@
   function render() {
     ticking = false;
 
-    var targetProgress = computeTargetProgress();
+    var scrollable = wrapper.offsetHeight - viewportHeight;
+    var rect = wrapper.getBoundingClientRect();
+    var targetProgress = scrollable > 0 ? Math.min(1, Math.max(0, -rect.top / scrollable)) : 0;
+
+    // Pins .drill-hero-sticky in place while the wrapper scrolls past,
+    // releasing again at the bottom — what `position: sticky` used to do,
+    // computed here instead (see .drill-hero-sticky in main.css for why).
+    // Applied directly off targetProgress, not the eased appliedProgress
+    // below: position needs to track scroll 1:1, only the explode/flip
+    // animation benefits from smoothing.
+    if (sticky) {
+      var pinTranslate = scrollable > 0 ? Math.min(Math.max(-rect.top, 0), scrollable) : 0;
+      sticky.style.transform = pinTranslate > 0 ? "translateY(" + pinTranslate + "px)" : "";
+    }
+
     var delta = targetProgress - appliedProgress;
 
     if (Math.abs(delta) < 0.0008) {

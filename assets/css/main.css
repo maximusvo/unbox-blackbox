@@ -184,8 +184,17 @@ img { max-width: 100%; display: block; }
 }
 
 .drill-hero-sticky {
-  position: sticky;
-  top: 0;
+  /* Not `position: sticky` — pinned instead via a translateY computed in
+     drill-hero.js's existing scroll loop. A single sticky element (this one
+     alone, even with nothing else on the page sticky) is enough to trigger
+     Chromium/Vivaldi's dynamic-toolbar-resize repositioning bug, confirmed
+     by testing with .site-header (previously sticky, now also fixed) as the
+     only other sticky element removed and the jump persisting regardless.
+     This one pins over the largest scroll range (320svh) of anything on the
+     page, right at the boundary where the teaser list begins — the most
+     likely single biggest contributor to the jump. */
+  position: relative;
+  will-change: transform;
   /* svh (locked to the smallest viewport, i.e. toolbar always shown) instead
      of vh: some WebKit-based iOS browsers (Vivaldi confirmed, Safari itself
      is fine) still recompute plain vh live as their toolbar collapses while

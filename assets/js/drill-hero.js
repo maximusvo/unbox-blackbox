@@ -36,10 +36,29 @@
 
   var ticking = false;
 
+  // Baseline viewport height, frozen against toolbar animation. Mobile
+  // browsers shrink/grow window.innerHeight live as their address bar
+  // collapses or reappears while the page scrolls (that's the "visual
+  // viewport", separate from the stable viewport our CSS sizes off).
+  // Reading it fresh on every scroll tick fed that fluctuation straight
+  // into the progress calculation below, which is what made the hero
+  // visibly jump on Firefox/Vivaldi. We only want to react to a genuine
+  // resize (rotation, real window resize), which always changes the
+  // width too — a toolbar show/hide never does.
+  var viewportWidth = window.innerWidth;
+  var viewportHeight = window.innerHeight;
+
+  function syncViewportSize() {
+    if (window.innerWidth !== viewportWidth) {
+      viewportWidth = window.innerWidth;
+      viewportHeight = window.innerHeight;
+    }
+  }
+
   function render() {
     ticking = false;
 
-    var scrollable = wrapper.offsetHeight - window.innerHeight;
+    var scrollable = wrapper.offsetHeight - viewportHeight;
     var progress = 0;
     if (scrollable > 0) {
       var rect = wrapper.getBoundingClientRect();
@@ -72,7 +91,12 @@
     }
   }
 
+  function onResize() {
+    syncViewportSize();
+    onScroll();
+  }
+
   window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", onScroll);
+  window.addEventListener("resize", onResize);
   render();
 })();

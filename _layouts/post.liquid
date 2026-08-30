@@ -6,6 +6,7 @@ layout: default
     <div class="post-single-meta">
       {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d.%m.%Y' }}</time>{% endif %}
       {% for cat in page.categories %}<span class="teaser-cat cat-{{ cat | slugify }}">{{ cat }}</span>{% endfor %}
+      {% if site.author.name %}<span class="post-single-author" itemprop="author" itemscope itemtype="https://schema.org/Person">von <a href="{{ '/about/' | relative_url }}" rel="author" itemprop="name">{{ site.author.name }}</a></span>{% endif %}
     </div>
     <h1 class="post-single-title">{{ page.title }}</h1>
     {% if page.target %}<p class="post-single-source">Erschienen bei: {{ page.target }}</p>{% endif %}
@@ -21,10 +22,10 @@ layout: default
     </div>
 
     {% if page.externalurl %}
-    <p class="post-single-external">
-      Dieser Inhalt ist extern bei {{ page.target }} erschienen und wird hier nur verlinkt.
-      <a href="{{ page.externalurl }}" target="_blank" rel="noopener">Zur Originalquelle &#8599;</a>
-    </p>
+    <div class="post-single-external">
+      <p>Dieser Inhalt ist extern bei {{ page.target }} erschienen und wird hier nur verlinkt.</p>
+      <a class="post-single-external-btn" href="{{ page.externalurl }}" target="_blank" rel="noopener">Zur Originalquelle &#8599;</a>
+    </div>
     {% endif %}
 
     <p class="post-single-back"><a href="{{ '/#archiv' | relative_url }}">&larr; Zurück zur Übersicht</a></p>

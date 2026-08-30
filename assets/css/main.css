@@ -537,6 +537,9 @@ h1,
   margin-bottom: 12px;
 }
 
+.post-single-author a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 2px; }
+.post-single-author a:hover { color: var(--ink); }
+
 .post-single-title { font-size: 2rem; line-height: 1.2; margin: 0 0 10px; }
 .post-single-source { color: var(--ink-faint); font-size: 0.85rem; margin: 0 0 28px; }
 
@@ -560,12 +563,28 @@ h1,
 
 .post-single-external {
   margin-top: 32px;
-  padding: 16px 18px;
+  padding: 20px 24px;
   background: var(--bg-raised);
   border: 1px dashed var(--line-strong);
+  text-align: center;
+}
+.post-single-external p {
+  margin: 0 0 16px;
   font-size: 0.92rem;
   color: var(--ink-soft);
 }
+.post-single-external-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--accent-gradient);
+  color: #05070a;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.15s ease;
+}
+.post-single-external-btn:hover { opacity: 0.85; }
 
 .post-single-back { margin-top: 32px; font-size: 0.9rem; }
 

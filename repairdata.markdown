@@ -11,7 +11,7 @@ permalink: /reparaturdaten/
 <header class="rd-intro">
 <p class="rd-kicker">Open Repair Data · <span data-rd="years">2012–2026</span></p>
 <h1>{{ page.title }} und woran es scheitert</h1>
-<p class="rd-lede">Repair Cafés, Restart Parties und ähnliche Initiativen dokumentieren jeden Reparaturversuch. Die Übersicht zeigt alle Produktkategorien von der am häufigsten bis zur am seltensten reparierten, wie oft die Reparatur gelang, wie oft das Gerät als „End of life“ aufgegeben wurde – und warum.</p>
+<p class="rd-lede">Reparaturinitiativen wie Repair Cafés dokumentieren ihre Reparaturversuche. Die Übersicht zeigt alle Produktkategorien von der am häufigsten bis zur am seltensten reparierten, wie oft die Reparatur gelang, wie oft das Gerät als „End of life“ aufgegeben wurde und warum.</p>
 </header>
 <section class="rd-stats" aria-label="Kennzahlen">
 <div class="rd-stat"><span class="rd-stat-label">Reparaturversuche</span><span class="rd-stat-value" data-rd="n">–</span></div>

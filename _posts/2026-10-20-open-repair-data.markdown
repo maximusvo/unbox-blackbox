@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Datenanalyse: Was in Reparaturinitiativen repariert wird"
-date: 2026-08-08
+date: 2026-10-20
 categories: Blog
 target: ""
 teaser: >

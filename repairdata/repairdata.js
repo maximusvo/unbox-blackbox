@@ -15,9 +15,6 @@
 
   function $(name) { return root.querySelector('[data-rd="' + name + '"]'); }
   var rowsEl = $("rows");
-  var tip = $("tooltip");
-  // Tooltip direkt an <body>, damit position: fixed nicht von Eltern-Transforms abhängt
-  document.body.appendChild(tip);
 
   var fmtInt = new Intl.NumberFormat("de-DE");
   var fmtCompact = new Intl.NumberFormat("de-DE", { notation: "compact", maximumFractionDigits: 1 });
@@ -66,37 +63,6 @@
     $("eol").textContent = pct(eol / known);
     $("countries").textContent = state.scope === "eu" ? DATA.meta.eu_countries : DATA.meta.countries;
   }
-
-  // Tooltip
-  function showTip(evt, d) {
-    tip.replaceChildren();
-    tip.appendChild(el("div", "rd-tt-title", d.c.label + " · " + fmtInt.format(d.c.n) + " Versuche"));
-    STATUS.forEach(function (s) {
-      var r = el("div", "rd-tt-row");
-      var key = el("i");
-      key.style.background = "var(--rd-" + s.cls + ")";
-      r.appendChild(key);
-      r.appendChild(el("b", null, pct(d[s.cls])));
-      r.appendChild(el("span", null, s.label + " (" + fmtInt.format(d.c.status[s.key]) + ")"));
-      tip.appendChild(r);
-    });
-    if (d.c.status.Unknown) {
-      tip.appendChild(el("div", "rd-tt-foot",
-        "Ohne Ergebnis: " + fmtInt.format(d.c.status.Unknown) + " (" + pct(d.unknown) + ", nicht eingerechnet)"));
-    }
-    tip.hidden = false;
-    moveTip(evt);
-  }
-  function moveTip(evt) {
-    var r = evt.currentTarget.getBoundingClientRect();
-    var pointer = evt.type !== "focus" && evt.clientX != null;
-    var x = pointer ? evt.clientX : r.left + r.width / 2;
-    var y = pointer ? evt.clientY : r.top;
-    var w = tip.offsetWidth, h = tip.offsetHeight;
-    tip.style.left = Math.min(Math.max(8, x + 14), window.innerWidth - w - 8) + "px";
-    tip.style.top = (y - h - 12 < 64 ? y + 18 : y - h - 12) + "px";
-  }
-  function hideTip() { tip.hidden = true; }
 
   function barList(items) {
     var ul = el("ul", "rd-bars");
@@ -154,11 +120,6 @@
       seg.style.flex = String(d[s.cls]);
       out.appendChild(seg);
     });
-    out.addEventListener("pointerenter", function (e) { showTip(e, d); });
-    out.addEventListener("pointermove", moveTip);
-    out.addEventListener("pointerleave", hideTip);
-    sum.addEventListener("focus", function () { showTip({ currentTarget: out, type: "focus" }, d); });
-    sum.addEventListener("blur", hideTip);
     sum.appendChild(out);
 
     var fix = el("span", "rd-pct rd-fix");
@@ -218,7 +179,6 @@
   }
 
   function render() {
-    hideTip();
     var list = current();
     var maxN = Math.max.apply(null, list.map(function (d) { return d.c.n; }));
     var frag = document.createDocumentFragment();
@@ -246,7 +206,6 @@
       if (DATA) render();
     });
   });
-  window.addEventListener("scroll", hideTip, { passive: true });
 
   fetch(root.dataset.src)
     .then(function (r) {

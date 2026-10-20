@@ -53,7 +53,7 @@ permalink: /reparaturdaten/
 <section class="rd-notes">
 <h2>So sind die Zahlen zu lesen</h2>
 <ul>
-<li><strong>Erfolgsquote</strong> = Anteil „Repariert“ an allen Versuchen mit bekanntem Ergebnis. <strong>End-of-life-Quote</strong> = Anteil der Geräte, die als nicht reparierbar aufgegeben wurden. Versuche ohne Ergebnis („Unknown“) sind herausgerechnet; ihr Anteil steht im Tooltip.</li>
+<li><strong>Erfolgsquote</strong> = Anteil „Repariert“ an allen Versuchen mit bekanntem Ergebnis. <strong>End-of-life-Quote</strong> = Anteil der Geräte, die als nicht reparierbar aufgegeben wurden. Versuche ohne Ergebnis („Unknown“) sind herausgerechnet; ihr Anteil steht in den aufgeklappten Details.</li>
 <li><strong>Reparierbar</strong> heißt: Fehler gefunden, aber vor Ort nicht behoben – meist fehlt ein Ersatzteil, das nachbestellt wird.</li>
 <li><strong>Gründe</strong> werden nur bei „End of life“ und nur bei Elektrogeräten erfasst – und auch dort nur bei einem Teil der Fälle. Die Prozentwerte beziehen sich auf die Fälle mit Angabe.</li>
 <li><strong>Kategorien</strong> stammen aus dem Open Repair Data Standard (ORDS); die deutschen Bezeichnungen sind eigene Übersetzungen.</li>
@@ -63,6 +63,5 @@ permalink: /reparaturdaten/
 </ul>
 </section>
 </div>
-<div class="rd-tooltip" data-rd="tooltip" role="status" hidden></div>
 <script src="{{ '/repairdata/repairdata.js' | relative_url }}" defer></script>
 </div>

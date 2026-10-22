@@ -11,10 +11,5 @@ teaser: >
   Reparatur, lokale Anpassung und Recycling. Open Hardware verstehe ich deshalb als Infrastruktur,
   ohne die Kreislaufwirtschaft nicht funktioniert.
 description: >
-  Der Talk beim Circular Society Forum 2022, gehalten in der Session "Open Design und Open
-  Source", behandelt den Zusammenhang zwischen offenen Technologien und dezentralen Kreisläufen.
-  Voigt argumentiert, dass eine zirkuläre Gesellschaft offene Technik braucht, die Teilhabe,
-  Reparatur, lokale Anpassung und Recycling überhaupt erst ermöglicht. Der Vortrag ordnet Open
-  Hardware damit als infrastrukturelle Voraussetzung für eine funktionierende Kreislaufwirtschaft
-  ein.
+  Mein Talk beim Circular Society Forum 2022: Warum eine Kreislaufgesellschaft Open Hardware und offene Technik braucht.
 ---

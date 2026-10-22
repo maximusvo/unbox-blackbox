@@ -13,10 +13,5 @@ teaser: >
   scheitern. Und weil die Materialien leicht erhältlich sind, können auch Bastler:innen und
   unabhängige Forschende einsteigen.
 description: >
-  Gastartikel auf heise.de über das Flow Battery Research Collective, das einen offenen Bausatz für
-  Redox-Flow-Batterien entwickelt. Anders als Lithium-Ionen-Akkus nutzen diese Batterien flüssige Elektrolyte
-  in separaten Tanks, was modulare und reparierbare Systeme ermöglicht. Der Artikel beschreibt, wie offene
-  Plattformen mit frei zugänglichen Experimenten und Daten verhindern sollen, dass wertvolles Wissen bei
-  scheiternden Unternehmen verloren geht, und wie leicht erhältliche Materialien auch Bastlern und
-  unabhängigen Forschern Zugang zu dieser Energiespeichertechnologie eröffnen.
+  Auf heise.de stelle ich das Flow Battery Research Collective vor, das einen offenen, reparierbaren Bausatz für Redox-Flow-Batterien entwickelt.
 ---

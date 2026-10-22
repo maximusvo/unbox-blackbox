@@ -11,10 +11,5 @@ teaser: >
   Offenen Werkstätten: Wie eignen sich Menschen dort Technik an, und was tragen Maker- und
   Reparaturinitiativen zum Wandel der Region bei?
 description: >
-  Buchbeitrag im Sammelband "Wir machen das schon – Lausitz im Wandel" im
-  Christoph Links Verlag, der Perspektiven auf den Strukturwandel in der
-  Lausitzer Region versammelt. Der Beitrag von Maximilian Voigt beleuchtet
-  die Rolle Offener Werkstätten für die Aneignung von Technik und für
-  Veränderungsprozesse vor Ort. Er ordnet lokale Maker- und
-  Reparaturinitiativen in den größeren Kontext des Wandels der Lausitz ein.
+  Mein Beitrag im Sammelband „Wir machen das schon – Lausitz im Wandel“ über Offene Werkstätten und Technikaneignung im Strukturwandel.
 ---

@@ -12,5 +12,5 @@ teaser: >
   bei der Open Knowledge Foundation untersucht, wie verbreitet Eigenreparatur ist. Unsere Zahlen
   zeigen: Sie ist kein Randphänomen.
 description: >
-  Das „Recht auf Reparatur“ hat den Zugang zu Reparaturen in der Europäischen Union verbessert. Privatpersonen, die Reparaturen selbst durchführen möchten, bleiben jedoch weitgehend ausgeschlossen, denn der Zugang zu vielen Ersatzteilen und technischen Informationen bleibt nach wie vor kommerziellen Anbietern vorbehalten, die ihre Professionalität nachzuweisen haben. Diese Publikation belegt, dass die Eigenreparatur kein Randphänomen ist und liefert konkrete Zahlen.
+  Unsere Studie mit dem Runden Tisch Reparatur zeigt: Eigenreparatur ist kein Randphänomen, beim Recht auf Reparatur aber zu wenig berücksichtigt.
 ---

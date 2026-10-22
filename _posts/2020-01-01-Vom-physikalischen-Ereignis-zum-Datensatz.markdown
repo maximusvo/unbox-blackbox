@@ -11,14 +11,7 @@ teaser: >
   Sensorik bis zur Datenerfassung. Dabei wird deutlich: Selbstlernende Systeme sind nur so gut wie
   die Daten, auf denen sie aufbauen.
 description: >
-  Beitrag in der Fachzeitschrift LOG IN, der ein didaktisches
-  Workshopkonzept zur Vermittlung von Grundlagen künstlicher Intelligenz
-  vorstellt. Im Mittelpunkt steht die Frage, wie aus einem physikalischen
-  Ereignis über Sensorik und Datenerfassung ein maschinell verarbeitbarer
-  Datensatz wird, auf dessen Basis intelligente Systeme Entscheidungen
-  treffen. Der Text richtet sich an Lehrkräfte im Informatikunterricht und
-  betont, dass die Qualität selbstlernender Systeme wesentlich von den
-  zugrunde liegenden Daten abhängt.
+  In der Fachzeitschrift LOG IN stelle ich ein Workshopkonzept vor, mit dem Lehrkräfte Grundlagen künstlicher Intelligenz vermitteln können.
 ---
 <div class="img-wrap-center">
     <iframe width="100%" height="576" src="/assets/extern/LOG_IN_193-194_(2020)_Beitrag_Maximilian Voigt.pdf"></iframe>

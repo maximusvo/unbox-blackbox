@@ -12,13 +12,7 @@ teaser: >
   Reparatur, offenen Technologiestandards und kooperativen Geschäftsmodellen, damit Kreisläufe der
   ganzen Gesellschaft nutzen und nicht nur dem Markt.
 description: >
-  In diesem Talk auf der re:publica 2023 kritisiert Maximilian Voigt die Ansätze großer
-  Konzerne wie Apple zur Circular Economy, die eher zu weniger Kontrolle und Transparenz als
-  zu echter Nachhaltigkeit führen. Als Alternative stellt er das Modell einer offenen Circular
-  Society vor, das auf dem Recht auf Reparatur, offenen Technologiestandards und kooperativen
-  Geschäftsmodellen beruht. Nur solche Open-Source-Ansätze könnten aus seiner Sicht
-  zukunftsfähige Kreisläufe schaffen, die der gesamten Gesellschaft statt allein dem Markt
-  nutzen.
+  Mein Talk auf der re:publica 2023: Warum die Kreislaufwirtschaft der Konzerne nicht reicht und was eine offene Circular Society ausmacht.
 ---
 
 <a href="https://re-publica.com/de/session/den-status-quo-ueberwinden-die-potenziale-einer-open-circular-society" target="_blank">Zur Originalquelle</a>

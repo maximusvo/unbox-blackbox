@@ -12,12 +12,5 @@ teaser: >
   Schlüsselrolle spielen Makerspaces: Als lokale Lernorte machen sie mehr Teilhabe praktisch
   erfahrbar.
 description: >
-  Fachbeitrag in der Zeitschrift Ökologisches Wirtschaften im Rahmen eines
-  Schwerpunktheftes zu Digitalisierung und Nachhaltigkeit. Der Text
-  argumentiert, dass offene Bildung und Open-Source-Software wesentliche
-  Voraussetzungen dafür sind, dass Bürgerinnen und Bürger sich aktiv und
-  nachhaltig mit Technik auseinandersetzen können, statt nur passive
-  Konsumierende zu bleiben. Im Zentrum steht die Rolle von Makerspaces als
-  lokale Lernorte, die einen strukturellen Wandel hin zu mehr Teilhabe und
-  Nachhaltigkeit befördern können.
+  Mein Fachbeitrag in Ökologisches Wirtschaften: Warum offene Bildung, Open Source und Makerspaces für einen nachhaltigen Umgang mit Technik nötig sind.
 ---

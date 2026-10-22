@@ -11,12 +11,5 @@ teaser: >
   denen Bürgerprojekte in der Stadtentwicklung einfach Prototypen bauen können. Offene Werkstätten
   sind für sie zentral, um Betroffene an Veränderungen zu beteiligen.
 description: >
-  Gastartikel auf hardware.prototypefund.de mit der Elektrotechnikerin und
-  Doktorandin Sara Reichert, die dafür plädiert, Technik von Anfang an offen
-  zu dokumentieren, statt Nutzer:innen zu mühsamem Reverse Engineering zu
-  zwingen. Reichert entwickelt im Rahmen ihrer Dissertation vereinfachte,
-  modularisierte Open-Hardware-Bausteine für niederschwelliges Prototyping in
-  Bürgerprojekten der Stadtentwicklung. Offene Werkstätten und partizipative
-  Technologieentwicklung seien zentral, um Betroffene in Veränderungsprozesse
-  einzubeziehen.
+  Gespräch mit Sara Reichert für den Prototype Fund: Warum Technik von Anfang an offen dokumentiert sein sollte, statt Reverse Engineering zu erzwingen.
 ---

@@ -12,11 +12,5 @@ teaser: >
   Grenze zwischen Herstellern und Konsument:innen aufweicht. Deutschland sollte diesem Beispiel
   folgen.
 description: >
-  Der Gastartikel auf Netzpolitik.org stellt eine französische Gesetzesreform vor, die Hersteller
-  seit Januar 2022 verpflichtet, Fertigungszeichnungen für nicht mehr erhältliche Ersatzteile
-  bereitzustellen, sofern diese per 3D-Druck herstellbar sind. Voigt beschreibt, wie dies
-  dezentrale, bedarfsgesteuerte Produktion vor Ort ermöglicht und die klassische Trennung
-  zwischen Herstellern und Konsument:innen aufweicht. Er bewertet den französischen Ansatz als
-  Modell für eine nachhaltigere Wirtschaft und plädiert dafür, dass auch Deutschland diesem
-  Beispiel folgen sollte.
+  Auf Netzpolitik.org: Frankreich verpflichtet Hersteller, Druckvorlagen für Ersatzteile herauszugeben. Deutschland sollte folgen.
 ---

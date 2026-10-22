@@ -12,9 +12,5 @@ teaser: >
   Produktzyklen und verorte sie in den Debatten um Recht auf Reparatur, Kreislaufwirtschaft und
   offene Hardware.
 description: >
-  Wissenschaftliche Publikation auf SSRN, die technische Entfremdung als Hürde für nachhaltigere Produktzyklen
-  untersucht: den Umstand, dass Nutzerinnen und Nutzer zunehmend von den technischen Grundlagen ihrer Geräte
-  abgeschnitten sind, etwa durch geschlossene Designs, fehlende Dokumentation oder eingeschränkten Zugang zu
-  Ersatzteilen und Reparaturwissen. Die Arbeit ordnet dieses Phänomen in die Debatten um Recht auf Reparatur,
-  Kreislaufwirtschaft und offene Hardware ein.
+  Mein Paper auf SSRN: Wie technische Entfremdung von unseren Geräten nachhaltige Produktzyklen, Reparatur und Kreislaufwirtschaft erschwert.
 ---

@@ -11,11 +11,7 @@ teaser: >
   Werkstätten fördert. Wir sprechen darüber, wie transdisziplinäre Zusammenarbeit gelingt und wie
   sich praktische Maker-Bildung mit kreativen Lernansätzen verbinden lässt.
 description: >
-  In dieser Episode des Podcasts "Das Lernen Hacken" spricht Maximilian Voigt über offene
-  Werkstätten als Lernorte der Zukunft. Er stellt seine Arbeit im Netzwerk Offener Werkstätten
-  in Brandenburg vor, das den Austausch zwischen solchen Einrichtungen fördert. Im Gespräch
-  geht es um transdisziplinäre Zusammenarbeit und darum, wie offene Werkstätten praktische
-  Maker-Bildung mit kreativen Lernansätzen verbinden können.
+  Im Podcast „Das Lernen Hacken“ spreche ich über Offene Werkstätten als Lernorte der Zukunft und das Netzwerk Offener Werkstätten in Brandenburg.
 ---
 
 <a href="https://dlh.podcaster.de/das-lernen-hacken/4-maximilian-voigt-offene-werkstaetten-als-zukunftsorte-des-lernens/" target="_blank">Zur Originalquelle</a>

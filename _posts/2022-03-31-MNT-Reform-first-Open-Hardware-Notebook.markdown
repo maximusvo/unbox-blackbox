@@ -11,14 +11,5 @@ teaser: >
   Chiphersteller wie Intel Designinformationen hinter NDAs verschließen, und fordert ein „Recht auf
   Schaltplan“ sowie mehr öffentliche Förderung für offene Hardware.
 description: >
-  Gastartikel auf hardware.prototypefund.de mit einem Interview mit Lukas
-  Hartmann von MNT Research über den MNT Reform, einen vollständig
-  dokumentierten und reparierbaren Laptop. Hartmanns These lautet, dass
-  offene, vom Retrocomputing inspirierte Hardware-Plattformen Nutzer:innen
-  echte Kontrolle über ihre Geräte geben und langfristige Wartbarkeit
-  sichern. Als Haupthürden nennt er den Widerstand von Chipherstellern wie
-  Intel, die Designinformationen unter NDAs geheim halten, sowie
-  unzureichende Förderstrukturen für Open-Hardware-Entwicklung. Er fordert
-  ein "Recht auf Schaltplan" und mehr öffentliche Unterstützung für
-  nachhaltige Hardware-Innovation.
+  Interview mit Lukas Hartmann über den MNT Reform, einen offenen, reparierbaren Laptop, und warum es ein Recht auf Schaltplan braucht.
 ---

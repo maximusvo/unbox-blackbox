@@ -11,11 +11,5 @@ teaser: >
   Reallaboren bis Citizen Science. Ich habe den Eintrag zu FabLabs beigesteuert. Das Buch ist bei
   transcript erschienen und frei zugänglich.
 description: >
-  Das im transcript Verlag erschienene Handbuch Transdisziplinäre Didaktik, herausgegeben von
-  Tobias Schmohl und Thorsten Philipp, versammelt auf rund 470 Seiten über 30 Schlüsselbegriffe
-  zur transdisziplinären Hochschullehre, darunter Reallabore, Citizen Science und FabLabs. Es
-  ordnet diese Konzepte in den Kontext transformativer Wissenschaft ein, die auf globale
-  Herausforderungen wie Klimawandel und Migration reagiert. Das Open-Access-Werk richtet sich an
-  Studierende, Lehrende und Wissenschaftler:innen und verbindet theoretische Grundlagen mit
-  praktischen Anwendungen für innovative Lehrformate.
+  Mein Eintrag zu FabLabs im Handbuch Transdisziplinäre Didaktik (transcript, Open Access), herausgegeben von Tobias Schmohl und Thorsten Philipp.
 ---

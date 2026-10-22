@@ -10,10 +10,5 @@ teaser: >
   geschrieben. Darin geht es darum, wie Open Hardware und Zivilgesellschaft gemeinsam den Weg in
   eine nachhaltige Zukunft öffnen können. Der Titel steht auch über dieser Website.
 description: >
-  Die Publikation zum Forum Open Hardware 2023 trägt Voigts programmatischen Titel "Unboxing
-  Blackboxes" und behandelt das Verhältnis von Open Hardware und Zivilgesellschaft auf dem Weg
-  zu einer nachhaltigeren Zukunft. Sie reiht sich in die Beiträge des Forums ein, das offene
-  Hardwareentwicklung als Werkzeug für gesellschaftliche Teilhabe und Technikgestaltung
-  diskutiert. Im Fokus stehen dabei mutmaßlich Fragen von Reparierbarkeit, lokaler Produktion und
-  ziviler Mitgestaltung technischer Systeme.
+  Mein Beitrag „Unboxing Blackboxes“ zum Forum Open Hardware 2023: mit Open Hardware und Zivilgesellschaft in eine nachhaltige Zukunft.
 ---

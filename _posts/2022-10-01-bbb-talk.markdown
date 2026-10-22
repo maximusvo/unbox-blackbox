@@ -12,11 +12,5 @@ teaser: >
   Recht auf Reparatur kann kurzfristig helfen. Open Hardware geht weiter: Sie könnte verändern,
   welche Rolle technisches Wissen in der Wirtschaft spielt.
 description: >
-  Der Vortrag bei Bits & Bäume 2022 fragt, ob Open Hardware das Potenzial für eine grundlegende
-  technologische Umwälzung hat. Voigt beschreibt, wie komplexe, geschlossene Gerätedesigns
-  Nutzer:innen von ihrer Technik entfremden und Reparaturen erschweren, was auch ökologische
-  Folgen hat. Während die Recht-auf-Reparatur-Bewegung kurzfristige Verbesserungen anstrebt, geht
-  Open Hardware laut Voigt weiter, da sie die Rolle technischen Wissens im wirtschaftlichen
-  Kontext grundsätzlich verändern könnte. Er bezieht sich dabei auch auf eine EU-Studie von 2021,
-  die Open Hardware bereits als "die nächste Revolution" bezeichnet.
+  Mein Talk bei Bits & Bäume 2022: Ist Open Hardware „die nächste Revolution“, und was leistet sie über das Recht auf Reparatur hinaus?
 ---

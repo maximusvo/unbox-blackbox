@@ -11,12 +11,5 @@ teaser: >
   Gegenvorschlag: dezentrale, datensparsame Open-Source-Lösungen und freie Bildungsmaterialien, die
   die Politik gezielt fördert.
 description: >
-  Gastartikel auf Freitag.de über die improvisierte Digitalisierung von
-  Schule während der Corona-bedingten Schulschließungen. Der Text
-  beschreibt die Bandbreite eingesetzter Lösungen, von ausgedruckten
-  Arbeitsblättern bis zu virtuellen Klassenzimmern, und warnt vor
-  Datenschutzproblemen sowie Lock-in-Effekten kommerzieller Plattformen.
-  Als Alternative plädiert er für dezentrale, datensparsame
-  Open-Source-Lösungen und freie Bildungsmaterialien, die durch gezielte
-  politische Förderung gestärkt werden müssten.
+  Gastartikel im Freitag: Warum Schulen in der Corona-Krise auf Open Source und freie Bildungsmaterialien statt kommerzieller Plattformen setzen sollten.
 ---

@@ -11,8 +11,5 @@ teaser: >
   warum, und wie sich die Debatte stattdessen auf die EU-Ebene verlagert hat. Ich komme darin als
   Gesprächspartner zur deutschen Reparaturpolitik zu Wort.
 description: >
-  Radiobeitrag des Deutschlandfunk zum gescheiterten nationalen Aktionsprogramm "Reparieren statt Wegwerfen",
-  mit dem die Bundesregierung das im Koalitionsvertrag verankerte Recht auf Reparatur umsetzen wollte. Der
-  Beitrag ordnet ein, warum das Vorhaben nicht wie angekündigt kam und wie sich die Debatte stattdessen auf
-  EU-Ebene verlagerte. Maximilian Voigt tritt darin als Gesprächspartner zur deutschen Reparaturpolitik auf.
+  Deutschlandfunk über das gescheiterte Aktionsprogramm „Reparieren statt Wegwerfen“, mit mir als Gesprächspartner zur Reparaturpolitik.
 ---

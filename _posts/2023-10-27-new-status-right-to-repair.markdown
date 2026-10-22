@@ -12,13 +12,7 @@ teaser: >
   bleiben. Was wir eigentlich brauchen, ist ein Umdenken: modulare, offene Hardware, die Geräte als
   Teil eines Kreislaufs versteht statt als Wegwerfprodukt.
 description: >
-  In diesem Gastbeitrag für Netzpolitik.org argumentiert Maximilian Voigt, dass das EU-Recht
-  auf Reparatur zwar ein wichtiger Schritt ist, aber nicht ausreicht, um Elektroschrott wirksam
-  zu reduzieren. Der EU-Binnenmarktausschuss habe den Vorschlag zwar verbessert, etwa durch
-  umfassenderen Zugang zu Geräteinformationen und Ersatzteilen, zentrale Probleme blieben
-  jedoch bestehen. Er plädiert für ein grundsätzliches Umdenken hin zu modularen, offenen
-  Hardware-Designs, die Geräte als Teil eines fortlaufenden Kreislaufs statt als
-  Wegwerfprodukte begreifen.
+  Auf Netzpolitik.org: Warum das EU-Recht auf Reparatur nicht reicht, um Elektroschrott zu reduzieren, und wir modulare, offene Hardware brauchen.
 ---
 
 <a href="https://netzpolitik.org/2023/recht-auf-reparatur-warum-wir-endlich-eine-kreislaufgesellschaft-brauchen/" target="_blank">Zur Originalquelle</a>

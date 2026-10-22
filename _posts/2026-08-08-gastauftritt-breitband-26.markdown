@@ -11,5 +11,5 @@ teaser: >
   geworden. Wer selbst repariert, kommt an viele Ersatzteile und technische Informationen aber
   weiterhin nicht heran, denn sie bleiben gewerblichen Anbietern vorbehalten.
 description: >
-  Im Radiointerview spreche ich über das „Recht auf Reparatur“. Es hat den Zugang zu Reparaturen in der Europäischen Union verbessert. Privatpersonen, die Reparaturen selbst durchführen möchten, bleiben jedoch weitgehend ausgeschlossen, denn der Zugang zu vielen Ersatzteilen und technischen Informationen bleibt nach wie vor kommerziellen Anbietern vorbehalten, die ihre Professionalität nachzuweisen haben.
+  Bei Breitband (Deutschlandfunk Kultur) spreche ich darüber, wie gut das Recht auf Reparatur ist und warum Selbstreparierende außen vor bleiben.
 ---

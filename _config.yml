@@ -8,8 +8,8 @@ email: unbox-contact@posteo.de
 author:
   name: Maximilian Voigt
   twitter: ma__vo
+  url: "https://unbox-blackbox.org/about/"
 repository: "unbox-blackbox"
-logo: "/assets/img/mavo.jpg"
 
 keywords:
   - Reparierbarkeit

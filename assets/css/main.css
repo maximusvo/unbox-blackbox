@@ -591,6 +591,13 @@ h1,
 .page-single-title { font-size: 1.9rem; margin: 0 0 20px; }
 .page-single-content { color: var(--ink-soft); }
 .page-single-content a { color: var(--ink); }
+.about-portrait {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
+  margin: 0 0 24px;
+}
 
 .not-found-inner { text-align: center; }
 

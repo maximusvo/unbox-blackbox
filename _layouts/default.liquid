@@ -9,6 +9,7 @@
   <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
   {% feed_meta %}
   {% seo %}
+  {% if page.url == '/about/' %}{% include person-jsonld.liquid %}{% endif %}
 </head>
 <body>
 {% include header.liquid %}

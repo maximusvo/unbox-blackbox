@@ -5,14 +5,11 @@ date: 2020-06-15
 categories: Publikationen
 target: "LOG IN"
 teaser: >
-  Beitrag in der Fachzeitschrift LOG IN, der ein didaktisches
-  Workshopkonzept zur Vermittlung von Grundlagen künstlicher Intelligenz
-  vorstellt. Im Mittelpunkt steht die Frage, wie aus einem physikalischen
-  Ereignis über Sensorik und Datenerfassung ein maschinell verarbeitbarer
-  Datensatz wird, auf dessen Basis intelligente Systeme Entscheidungen
-  treffen. Der Text richtet sich an Lehrkräfte im Informatikunterricht und
-  betont, dass die Qualität selbstlernender Systeme wesentlich von den
-  zugrunde liegenden Daten abhängt.
+  Wie wird aus einem physikalischen Ereignis ein Datensatz, mit dem ein intelligentes System
+  Entscheidungen trifft? In der Fachzeitschrift LOG IN stelle ich ein Workshopkonzept vor, mit dem
+  Lehrkräfte im Informatikunterricht Grundlagen künstlicher Intelligenz vermitteln können, von der
+  Sensorik bis zur Datenerfassung. Dabei wird deutlich: Selbstlernende Systeme sind nur so gut wie
+  die Daten, auf denen sie aufbauen.
 description: >
   Beitrag in der Fachzeitschrift LOG IN, der ein didaktisches
   Workshopkonzept zur Vermittlung von Grundlagen künstlicher Intelligenz

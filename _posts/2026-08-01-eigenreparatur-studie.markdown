@@ -6,7 +6,11 @@ categories: Publikationen
 target: "okfn.de"
 externalurl: "https://okfn.de/publikationen/eigenreparaturstudie/"
 teaser: >
-  Das „Recht auf Reparatur“ hat den Zugang zu Reparaturen in der Europäischen Union verbessert. Privatpersonen, die Reparaturen selbst durchführen möchten, bleiben jedoch weitgehend ausgeschlossen, denn der Zugang zu vielen Ersatzteilen und technischen Informationen bleibt nach wie vor kommerziellen Anbietern vorbehalten, die ihre Professionalität nachzuweisen haben. Diese Publikation belegt, dass die Eigenreparatur kein Randphänomen ist und liefert konkrete Zahlen.
+  Das Recht auf Reparatur hat in der EU vieles verbessert. Wer selbst repariert, bleibt aber
+  weitgehend außen vor, denn viele Ersatzteile und technische Informationen bekommen nur gewerbliche
+  Anbieter, die ihre Professionalität nachweisen. Gemeinsam mit dem Runden Tisch Reparatur haben wir
+  bei der Open Knowledge Foundation untersucht, wie verbreitet Eigenreparatur ist. Unsere Zahlen
+  zeigen: Sie ist kein Randphänomen.
 description: >
   Das „Recht auf Reparatur“ hat den Zugang zu Reparaturen in der Europäischen Union verbessert. Privatpersonen, die Reparaturen selbst durchführen möchten, bleiben jedoch weitgehend ausgeschlossen, denn der Zugang zu vielen Ersatzteilen und technischen Informationen bleibt nach wie vor kommerziellen Anbietern vorbehalten, die ihre Professionalität nachzuweisen haben. Diese Publikation belegt, dass die Eigenreparatur kein Randphänomen ist und liefert konkrete Zahlen.
 ---

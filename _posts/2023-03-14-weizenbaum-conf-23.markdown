@@ -6,14 +6,11 @@ categories: Publikationen
 target: "Weizenbaum Conference 2022"
 externalurl: "https://www.ssoar.info/ssoar/handle/document/86102"
 teaser: >
-  Der Beitrag wurde auf der vierten Weizenbaum Conference 2022 unter dem Motto "Practicing
-  Sovereignty: Interventions for Open Digital Futures" in Berlin vorgestellt und ist in den
-  Tagungsproceedings des Weizenbaum-Instituts über SSOAR dokumentiert. Der Titel "Open Hardware
-  and Scientific Autonomy in Germany: How Transfer Activities Can Become More Attractive" deutet
-  darauf hin, dass Voigt den Beitrag offener Hardware zu wissenschaftlicher Souveränität und
-  Technologietransfer in Deutschland untersucht. Der englischsprachige Beitrag richtet sich an
-  ein wissenschaftliches Fachpublikum im Bereich digitaler Selbstbestimmung und
-  Forschungsinfrastruktur.
+  Wie können Transferaktivitäten rund um Open Hardware in Deutschland attraktiver werden, und was
+  hat das mit wissenschaftlicher Autonomie zu tun? Diesen Fragen gehe ich in meinem
+  englischsprachigen Beitrag zur vierten Weizenbaum Conference 2022 in Berlin nach, die unter dem
+  Motto „Practicing Sovereignty: Interventions for Open Digital Futures“ stand. Erschienen ist er in
+  den Tagungsproceedings des Weizenbaum-Instituts auf SSOAR.
 description: >
   Der Beitrag wurde auf der vierten Weizenbaum Conference 2022 unter dem Motto "Practicing
   Sovereignty: Interventions for Open Digital Futures" in Berlin vorgestellt und ist in den
